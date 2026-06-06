@@ -6,7 +6,7 @@ export const navLinks = [
 ];
 
 export const profile = {
-  name: "Bryan Alexander Vidal Crispín",
+  name: "Bryan Alexander Vidal Crispin",
   shortName: "Bryan Vidal",
   role: "Desarrollador Web y de Software",
   location: "Lima, Perú",
@@ -45,11 +45,11 @@ export const techGroups = [
   },
   {
     title: "Backend",
-    items: ["PHP", "Node.js", "C#", "Java"],
+    items: ["Node.js", "C#", "Java", "NestJS"],
   },
   {
     title: "Bases de Datos",
-    items: ["MySQL", "MariaDB", "SQL Server", "SQLite"],
+    items: ["MySQL", "SQL Server"],
   },
   {
     title: "Herramientas",
