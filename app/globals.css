@@ -22,7 +22,10 @@ html {
 
 body {
   margin: 0;
-  background: var(--background);
+  background:
+    radial-gradient(circle at top left, rgba(34, 211, 238, 0.14), transparent 30rem),
+    radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 28rem),
+    linear-gradient(180deg, #020617 0%, #030712 42%, #020617 100%);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -35,4 +38,11 @@ a {
 ::selection {
   background: #22d3ee;
   color: #020617;
+}
+
+.noise-layer {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 80px 80px;
+  mask-image: radial-gradient(circle at top, black, transparent 72%);
 }
