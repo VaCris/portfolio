@@ -64,23 +64,31 @@ export const projects = [
     description:
       "Plataforma web de herramientas PDF enfocada en simplicidad, privacidad y rendimiento.",
     stack: "Next.js, React, TypeScript, Tailwind CSS",
+    image: "",
+    imageAlt: "Captura del proyecto Docivo",
   },
   {
     name: "SPlay GO",
     description:
       "Aplicación web para explorar películas y series con catálogo dinámico, filtros, búsqueda y reproducción multimedia.",
     stack: "React, Vite, Tailwind CSS, TMDB API",
+    image: "",
+    imageAlt: "Captura del proyecto SPlay GO",
   },
   {
     name: "Ataraxia Timer",
     description:
       "Aplicación orientada a productividad y gestión del tiempo mediante técnicas Pomodoro.",
     stack: "React, APIs REST",
+    image: "",
+    imageAlt: "Captura del proyecto Ataraxia Timer",
   },
   {
     name: "TKOH Bookstore Shop",
     description: "Tienda online con gestión de productos y lógica de negocio.",
     stack: "PHP, Twig, JavaScript, CSS",
+    image: "",
+    imageAlt: "Captura del proyecto TKOH Bookstore Shop",
   },
 ];
 
