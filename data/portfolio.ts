@@ -8,7 +8,7 @@ export const navLinks = [
 export const profile = {
   name: "Bryan Alexander Vidal Crispin",
   shortName: "Bryan Vidal",
-  role: "Desarrollador Web y de Software",
+  role: "Desarrollador de Software",
   location: "Lima, Perú",
   email: "vidalbryanalexander@gmail.com",
   github: "https://github.com/VaCris",
