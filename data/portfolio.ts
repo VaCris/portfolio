@@ -92,11 +92,11 @@ export const projects = [
   {
     name: "Aputrak",
     description:
-      "Planificador de horarios y actividades offline-first con enfoque en organización personal y disponibilidad local.",
-    stack: "Next.js, TypeScript, IndexedDB, Offline-first",
+      "Participé en el rediseño de la interfaz de un planificador de horarios y actividades offline-first, mejorando la presentación visual y la experiencia de uso.",
+    stack: "Rediseño UI, Next.js, TypeScript, IndexedDB, Offline-first",
     image:
       "https://raw.githubusercontent.com/VaCris/VaCris/main/Aputrak%20%E2%80%94%20Schedule%20%26%20Activity%20Manager_page-0001.jpg",
-    imageAlt: "Captura del proyecto Aputrak",
+    imageAlt: "Captura del rediseño de interfaz de Aputrak",
     liveUrl: "https://aputrak.onrender.com/",
     repositoryUrl: "https://github.com/LavenderEdit/aputrak/tree/redesign/aputrak-ui",
   },
