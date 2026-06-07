@@ -34,19 +34,19 @@ export const techGroups = [
   {
     title: "Frontend",
     items: [
-      "React",
-      "Next.js",
-      "TypeScript",
-      "JavaScript ES6+",
-      "Tailwind CSS",
       "HTML5",
       "CSS3",
+      "Tailwind CSS",
+      "JavaScript ES6+",
+      "React",
       "Vite",
+      "Next.js",
+      "jQuery",
     ],
   },
   {
     title: "Backend",
-    items: ["Node.js", "C#", "Java", "NestJS"],
+    items: ["PHP", "Symfony", "Node.js", "NestJS", ".NET", "C#", "Java"],
   },
   {
     title: "Bases de Datos",
@@ -54,7 +54,7 @@ export const techGroups = [
   },
   {
     title: "Herramientas",
-    items: ["Git", "GitHub", "Postman", "Visual Studio Code", "Visual Studio"],
+    items: ["npm", "Git", "GitHub", "Postman", "Visual Studio Code", "Visual Studio"],
   },
 ];
 
@@ -62,33 +62,53 @@ export const projects = [
   {
     name: "Docivo",
     description:
-      "Plataforma web de herramientas PDF enfocada en simplicidad, privacidad y rendimiento.",
-    stack: "Next.js, React, TypeScript, Tailwind CSS",
-    image: "",
+      "Herramientas de PDF rápidas, privadas y sin distracciones, enfocadas en simplicidad y rendimiento.",
+    stack: "Next.js 16, React 19, TypeScript, Tailwind CSS 4",
+    image: "https://raw.githubusercontent.com/VaCris/VaCris/main/Docivo.png",
     imageAlt: "Captura del proyecto Docivo",
+    liveUrl: "https://docivo.onrender.com/",
+    repositoryUrl: "https://github.com/VaCris/docivo",
   },
   {
     name: "SPlay GO",
     description:
-      "Aplicación web para explorar películas y series con catálogo dinámico, filtros, búsqueda y reproducción multimedia.",
+      "Plataforma web para explorar películas y series con catálogo, búsqueda, filtros y reproductor dinámico.",
     stack: "React, Vite, Tailwind CSS, TMDB API",
-    image: "",
+    image: "https://raw.githubusercontent.com/VaCris/VaCris/main/splaygo.png",
     imageAlt: "Captura del proyecto SPlay GO",
+    liveUrl: "https://splay.evaluate.codes",
+    repositoryUrl: "https://github.com/VaCris/splay-go",
   },
   {
     name: "Ataraxia Timer",
     description:
-      "Aplicación orientada a productividad y gestión del tiempo mediante técnicas Pomodoro.",
-    stack: "React, APIs REST",
-    image: "",
+      "Aplicación orientada a productividad y gestión del tiempo mediante sesiones enfocadas y lógica de trabajo tipo Pomodoro.",
+    stack: "React, APIs REST, Productividad",
+    image: "https://raw.githubusercontent.com/VaCris/VaCris/main/ATARAXIA.png",
     imageAlt: "Captura del proyecto Ataraxia Timer",
+    liveUrl: "https://ataraxiatimer.app/",
+    repositoryUrl: "https://github.com/VaCris/Ataraxia-Timer",
   },
   {
-    name: "TKOH Bookstore Shop",
-    description: "Tienda online con gestión de productos y lógica de negocio.",
-    stack: "PHP, Twig, JavaScript, CSS",
+    name: "Aputrak",
+    description:
+      "Planificador de horarios y actividades offline-first con enfoque en organización personal y disponibilidad local.",
+    stack: "Next.js, TypeScript, IndexedDB, Offline-first",
+    image:
+      "https://raw.githubusercontent.com/VaCris/VaCris/main/Aputrak%20%E2%80%94%20Schedule%20%26%20Activity%20Manager_page-0001.jpg",
+    imageAlt: "Captura del proyecto Aputrak",
+    liveUrl: "https://aputrak.onrender.com/",
+    repositoryUrl: "https://github.com/LavenderEdit/aputrak/tree/redesign/aputrak-ui",
+  },
+  {
+    name: "Reservation API",
+    description:
+      "API REST para gestión de reservas con autenticación, lógica de negocio y estructura backend mantenible.",
+    stack: "PHP, Symfony, JWT, REST API",
     image: "",
-    imageAlt: "Captura del proyecto TKOH Bookstore Shop",
+    imageAlt: "Vista conceptual del proyecto Reservation API",
+    liveUrl: "",
+    repositoryUrl: "https://github.com/VaCris/reservation-api",
   },
 ];
 
