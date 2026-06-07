@@ -32,6 +32,30 @@ export function ProjectsSection() {
               <p className="mt-6 max-w-md text-sm font-semibold leading-6 text-slate-300">
                 {project.stack}
               </p>
+
+              <div className="mt-8 flex flex-wrap gap-3">
+                {project.liveUrl ? (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-full bg-white px-5 py-3 text-sm font-bold text-slate-950 transition hover:scale-[1.02] hover:bg-cyan-200"
+                  >
+                    Ver sitio
+                  </a>
+                ) : null}
+
+                {project.repositoryUrl ? (
+                  <a
+                    href={project.repositoryUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="rounded-full border border-white/15 px-5 py-3 text-sm font-bold text-white transition hover:bg-white/10"
+                  >
+                    Repositorio
+                  </a>
+                ) : null}
+              </div>
             </div>
 
             <div className="relative min-h-[18rem] overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-800 via-slate-950 to-black md:min-h-[24rem]">
@@ -43,7 +67,7 @@ export function ProjectsSection() {
                 <img
                   src={project.image}
                   alt={project.imageAlt}
-                  className="relative h-full min-h-[18rem] w-full object-cover md:min-h-[24rem]"
+                  className="relative h-full min-h-[18rem] w-full object-cover transition duration-700 group-hover:scale-[1.03] md:min-h-[24rem]"
                   loading="lazy"
                   decoding="async"
                 />
@@ -51,10 +75,10 @@ export function ProjectsSection() {
                 <div className="relative flex h-full min-h-[18rem] items-center justify-center px-8 text-center md:min-h-[24rem]">
                   <div>
                     <p className="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">
-                      Espacio para imagen
+                      Backend project
                     </p>
                     <p className="mt-3 text-sm leading-6 text-slate-400">
-                      Usa una captura en public/projects/{project.name.toLowerCase().replaceAll(" ", "-")}.webp
+                      Proyecto centrado en API, autenticación y lógica de negocio.
                     </p>
                   </div>
                 </div>
