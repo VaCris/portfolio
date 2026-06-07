@@ -37,11 +37,24 @@ const techIcons: Record<string, IconConfig> = {
   vite: {
     src: `${DEVICON_BASE_URL}/vitejs/vitejs-original.svg`,
   },
+  jquery: {
+    src: `${DEVICON_BASE_URL}/jquery/jquery-original.svg`,
+  },
   php: {
     src: `${DEVICON_BASE_URL}/php/php-original.svg`,
   },
+  symfony: {
+    src: `${DEVICON_BASE_URL}/symfony/symfony-original.svg`,
+    invert: true,
+  },
   "node.js": {
     src: `${DEVICON_BASE_URL}/nodejs/nodejs-original.svg`,
+  },
+  nestjs: {
+    src: `${DEVICON_BASE_URL}/nestjs/nestjs-original.svg`,
+  },
+  ".net": {
+    src: `${DEVICON_BASE_URL}/dot-net/dot-net-original.svg`,
   },
   "c#": {
     src: `${DEVICON_BASE_URL}/csharp/csharp-original.svg`,
@@ -52,14 +65,11 @@ const techIcons: Record<string, IconConfig> = {
   mysql: {
     src: `${DEVICON_BASE_URL}/mysql/mysql-original.svg`,
   },
-  mariadb: {
-    src: `${DEVICON_BASE_URL}/mariadb/mariadb-original.svg`,
-  },
   "sql server": {
     src: `${DEVICON_BASE_URL}/microsoftsqlserver/microsoftsqlserver-plain.svg`,
   },
-  sqlite: {
-    src: `${DEVICON_BASE_URL}/sqlite/sqlite-original.svg`,
+  npm: {
+    src: `${DEVICON_BASE_URL}/npm/npm-original-wordmark.svg`,
   },
   git: {
     src: `${DEVICON_BASE_URL}/git/git-original.svg`,
