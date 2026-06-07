@@ -14,6 +14,7 @@ export const profile = {
   github: "https://github.com/VaCris",
   linkedin:
     "https://www.linkedin.com/in/bryan-alexander-vidal-crispin-110410301",
+  formspreeEndpoint: "https://formspree.io/f/REEMPLAZA_TU_ID",
   intro:
     "Construyo aplicaciones web, interfaces modernas y soluciones digitales enfocadas en experiencia de usuario, rendimiento y estructura escalable.",
   summary:
