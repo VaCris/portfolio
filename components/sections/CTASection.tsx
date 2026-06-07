@@ -111,10 +111,6 @@ export function CTASection() {
           <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
 
           <div className="flex flex-col gap-4 border-t border-white/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
-            <p className="max-w-sm text-xs leading-5 text-[#D7E2EA]/40">
-              El formulario usa Formspree. Reemplaza el endpoint en data/portfolio.ts para activarlo.
-            </p>
-
             <button
               type="submit"
               className="rounded-full bg-[#D7E2EA] px-8 py-4 text-xs font-black uppercase tracking-[0.22em] text-[#0C0C0C] transition hover:scale-[1.02] hover:bg-white"
