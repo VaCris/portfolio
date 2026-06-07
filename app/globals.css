@@ -1,33 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap");
 @import "tailwindcss";
 
 :root {
   color-scheme: dark;
-  --background: #020617;
-  --foreground: #e2e8f0;
+  --background: #0c0c0c;
+  --foreground: #d7e2ea;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: Arial, Helvetica, sans-serif;
+  --font-sans: "Kanit", Arial, Helvetica, sans-serif;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
+html,
 body {
   margin: 0;
-  background:
-    radial-gradient(circle at top left, rgba(34, 211, 238, 0.14), transparent 30rem),
-    radial-gradient(circle at top right, rgba(59, 130, 246, 0.12), transparent 28rem),
-    linear-gradient(180deg, #020617 0%, #030712 42%, #020617 100%);
+  min-height: 100%;
+  overflow-x: clip;
+  scroll-behavior: smooth;
+  background: #0c0c0c;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Kanit", Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -35,14 +33,28 @@ a {
   text-decoration: none;
 }
 
+button,
+input,
+textarea {
+  font: inherit;
+}
+
 ::selection {
-  background: #22d3ee;
-  color: #020617;
+  background: #d7e2ea;
+  color: #0c0c0c;
+}
+
+.hero-heading {
+  background: linear-gradient(180deg, #646973 0%, #bbccd7 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .noise-layer {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
   background-size: 80px 80px;
   mask-image: radial-gradient(circle at top, black, transparent 72%);
 }
