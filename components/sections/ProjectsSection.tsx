@@ -25,7 +25,7 @@ function ProjectImage({
 }) {
   if (project.image) {
     return (
-      <div className={`${className} overflow-hidden rounded-[40px] sm:rounded-[50px] md:rounded-[60px]`}>
+      <div className={`${className} overflow-hidden rounded-2xl md:rounded-[2rem]`}>
         <img
           src={project.image}
           alt={project.imageAlt}
@@ -38,8 +38,8 @@ function ProjectImage({
   }
 
   return (
-    <div className={`${className} flex items-center justify-center rounded-[40px] bg-[#D7E2EA]/10 text-center sm:rounded-[50px] md:rounded-[60px]`}>
-      <p className="px-8 text-sm font-medium uppercase tracking-widest opacity-70">
+    <div className={`${className} flex items-center justify-center rounded-2xl bg-[#D7E2EA]/10 text-center md:rounded-[2rem]`}>
+      <p className="px-8 text-xs font-medium uppercase tracking-widest opacity-70 md:text-sm">
         Backend API
       </p>
     </div>
@@ -52,39 +52,39 @@ function ProjectPanel({ project, index, total }: ProjectPanelProps) {
     target: ref,
     offset: ["start end", "start start"],
   });
-  const targetScale = 1 - (total - 1 - index) * 0.03;
+  const targetScale = 1 - (total - 1 - index) * 0.018;
   const scale = useTransform(scrollYProgress, [0, 1], [1, targetScale]);
 
   return (
-    <div ref={ref} className="h-[85vh]">
+    <div ref={ref} className="min-h-[620px] py-6 md:h-[78vh] md:min-h-[680px]">
       <motion.article
-        className="sticky overflow-hidden rounded-[40px] border-2 border-[#D7E2EA] bg-[#0C0C0C] p-4 text-[#D7E2EA] sm:rounded-[50px] sm:p-6 md:rounded-[60px] md:p-8"
-        style={{ top: `calc(6rem + ${index * 28}px)`, scale }}
+        className="sticky overflow-hidden rounded-[28px] border border-[#D7E2EA]/70 bg-[#0C0C0C] p-4 text-[#D7E2EA] sm:rounded-[34px] sm:p-5 md:rounded-[42px] md:p-6"
+        style={{ top: `calc(4.5rem + ${index * 18}px)`, scale }}
       >
-        <div className="mb-6 grid gap-5 md:grid-cols-[0.3fr_0.35fr_1fr_auto] md:items-end">
-          <span className="text-[clamp(3rem,10vw,140px)] font-black leading-none">
+        <div className="mb-5 grid gap-4 md:grid-cols-[90px_120px_1fr_auto] md:items-end">
+          <span className="text-[clamp(2.2rem,6vw,5.5rem)] font-black leading-none">
             {String(index + 1).padStart(2, "0")}
           </span>
-          <p className="text-sm font-medium uppercase tracking-widest opacity-70">
+          <p className="text-xs font-medium uppercase tracking-widest opacity-70 md:text-sm">
             Proyecto
           </p>
           <div>
-            <h3 className="text-[clamp(2rem,5vw,5.2rem)] font-black uppercase leading-none tracking-tight">
+            <h3 className="text-[clamp(1.7rem,4vw,4rem)] font-black uppercase leading-[0.95] tracking-tight">
               {project.name}
             </h3>
-            <p className="mt-3 max-w-2xl text-sm font-light leading-relaxed opacity-70 md:text-base">
+            <p className="mt-2 max-w-2xl text-xs font-light leading-relaxed opacity-70 sm:text-sm md:text-[0.95rem]">
               {project.description}
             </p>
           </div>
-          <div className="flex flex-wrap gap-3 md:justify-end">
+          <div className="flex flex-wrap gap-2 md:justify-end">
             {project.liveUrl ? (
               <a
                 href={project.liveUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border-2 border-[#D7E2EA] px-6 py-3 text-sm font-medium uppercase tracking-widest text-[#D7E2EA] transition hover:bg-[#D7E2EA]/10 sm:px-8"
+                className="rounded-full border border-[#D7E2EA] px-4 py-2 text-xs font-medium uppercase tracking-widest text-[#D7E2EA] transition hover:bg-[#D7E2EA]/10 md:px-5 md:py-2.5"
               >
-                Live Project
+                Live
               </a>
             ) : null}
             {project.repositoryUrl ? (
@@ -92,7 +92,7 @@ function ProjectPanel({ project, index, total }: ProjectPanelProps) {
                 href={project.repositoryUrl}
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border-2 border-[#D7E2EA] px-6 py-3 text-sm font-medium uppercase tracking-widest text-[#D7E2EA] transition hover:bg-[#D7E2EA]/10 sm:px-8"
+                className="rounded-full border border-[#D7E2EA] px-4 py-2 text-xs font-medium uppercase tracking-widest text-[#D7E2EA] transition hover:bg-[#D7E2EA]/10 md:px-5 md:py-2.5"
               >
                 Repo
               </a>
@@ -100,12 +100,12 @@ function ProjectPanel({ project, index, total }: ProjectPanelProps) {
           </div>
         </div>
 
-        <div className="grid gap-3 md:grid-cols-[0.4fr_0.6fr]">
+        <div className="grid gap-3 md:grid-cols-[0.38fr_0.62fr]">
           <div className="grid gap-3">
-            <ProjectImage project={project} className="h-[clamp(130px,16vw,230px)]" />
-            <ProjectImage project={project} className="h-[clamp(160px,22vw,340px)]" muted />
+            <ProjectImage project={project} className="h-[110px] sm:h-[140px] md:h-[170px]" />
+            <ProjectImage project={project} className="h-[130px] sm:h-[170px] md:h-[230px]" muted />
           </div>
-          <ProjectImage project={project} className="h-[clamp(300px,40vw,590px)]" large />
+          <ProjectImage project={project} className="h-[250px] sm:h-[320px] md:h-[415px]" large />
         </div>
       </motion.article>
     </div>
@@ -114,8 +114,8 @@ function ProjectPanel({ project, index, total }: ProjectPanelProps) {
 
 export function ProjectsSection() {
   return (
-    <section id="proyectos" className="relative z-10 -mt-10 rounded-t-[40px] bg-[#0C0C0C] px-5 py-20 sm:-mt-12 sm:rounded-t-[50px] sm:px-8 sm:py-24 md:-mt-14 md:rounded-t-[60px] md:px-10 md:py-32">
-      <h2 className="hero-heading mb-16 text-center text-[clamp(3rem,12vw,160px)] font-black uppercase leading-none tracking-tight">
+    <section id="proyectos" className="relative z-10 -mt-6 rounded-t-[32px] bg-[#0C0C0C] px-4 py-16 sm:px-6 sm:py-20 md:-mt-10 md:rounded-t-[44px] md:px-10 md:py-24">
+      <h2 className="hero-heading mb-10 text-center text-[clamp(3rem,9vw,7.5rem)] font-black uppercase leading-none tracking-tight md:mb-14">
         Project
       </h2>
 
