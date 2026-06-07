@@ -11,14 +11,10 @@ const images = [
   "https://motionsites.ai/assets/hero-codenest-preview-Cgppc2qV.gif",
   "https://motionsites.ai/assets/hero-vex-ventures-preview-BczMFIiw.gif",
   "https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif",
-  "https://motionsites.ai/assets/hero-asme-preview-B_nGDnTP.gif",
-  "https://motionsites.ai/assets/hero-transform-data-preview-Cx5OU29N.gif",
-  "https://motionsites.ai/assets/hero-vitara-preview-Cjz2QYyU.gif",
-  "https://motionsites.ai/assets/hero-terra-preview-BFjrCr7T.gif",
 ];
 
-const firstRow = images.slice(0, 6);
-const secondRow = images.slice(6);
+const firstRow = images.slice(0, 4);
+const secondRow = images.slice(4);
 
 function MarqueeRow({ items, direction }: { items: string[]; direction: "left" | "right" }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -30,7 +26,7 @@ function MarqueeRow({ items, direction }: { items: string[]; direction: "left" |
       if (!element) return;
 
       const sectionTop = element.getBoundingClientRect().top + window.scrollY;
-      const nextOffset = (window.scrollY - sectionTop + window.innerHeight) * 0.3;
+      const nextOffset = (window.scrollY - sectionTop + window.innerHeight) * 0.18;
       setOffset(nextOffset);
     };
 
@@ -40,7 +36,7 @@ function MarqueeRow({ items, direction }: { items: string[]; direction: "left" |
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const translateX = direction === "right" ? offset - 200 : -(offset - 200);
+  const translateX = direction === "right" ? offset - 120 : -(offset - 120);
   const repeated = [...items, ...items, ...items];
 
   return (
@@ -54,7 +50,7 @@ function MarqueeRow({ items, direction }: { items: string[]; direction: "left" |
             key={`${src}-${index}`}
             src={src}
             alt="Proyecto visual"
-            className="h-[210px] w-[320px] shrink-0 rounded-2xl object-cover sm:h-[240px] sm:w-[380px] md:h-[270px] md:w-[420px]"
+            className="h-[130px] w-[210px] shrink-0 rounded-xl object-cover sm:h-[160px] sm:w-[260px] md:h-[190px] md:w-[320px] lg:h-[220px] lg:w-[360px]"
             loading="lazy"
             decoding="async"
             draggable={false}
@@ -67,7 +63,7 @@ function MarqueeRow({ items, direction }: { items: string[]; direction: "left" |
 
 export function MarqueeSection() {
   return (
-    <section className="bg-[#0C0C0C] pt-24 pb-10 sm:pt-32 md:pt-40">
+    <section className="bg-[#0C0C0C] pt-14 pb-8 sm:pt-20 md:pt-24">
       <div className="flex flex-col gap-3">
         <MarqueeRow items={firstRow} direction="right" />
         <MarqueeRow items={secondRow} direction="left" />
