@@ -42,39 +42,35 @@ export function HeroSection() {
           </div>
         </div>
 
-        <div className="relative mx-auto w-full max-w-md lg:max-w-none">
-          <div className="absolute -inset-8 rounded-[3rem] bg-gradient-to-br from-cyan-300/20 via-blue-500/10 to-transparent blur-3xl" />
+        <div className="relative mx-auto flex w-full max-w-md items-center justify-center lg:max-w-none">
+          <div className="absolute h-[32rem] w-[32rem] rounded-full bg-gradient-to-br from-cyan-300/20 via-blue-500/10 to-transparent blur-3xl" />
+          <div className="absolute h-80 w-80 rounded-full border border-white/10" />
+          <div className="absolute h-[24rem] w-[24rem] rounded-full border border-cyan-300/10" />
 
-          <div className="relative overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/[0.06] p-4 shadow-2xl shadow-black/40 backdrop-blur-2xl">
-            <div className="relative aspect-[4/5] overflow-hidden rounded-[2rem] bg-gradient-to-br from-slate-800 via-slate-950 to-black">
-              <div className="absolute inset-x-10 top-10 h-48 rounded-full bg-cyan-300/20 blur-3xl" />
-              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-slate-950/60 to-transparent" />
+          <div className="relative aspect-[4/5] w-full max-w-sm overflow-hidden rounded-[2.5rem] bg-gradient-to-br from-slate-800 via-slate-950 to-black shadow-2xl shadow-black/40 md:max-w-md">
+            <div className="absolute inset-x-8 top-8 h-56 rounded-full bg-cyan-300/20 blur-3xl" />
+            <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black via-slate-950/60 to-transparent" />
 
-              <div className="absolute inset-0 flex items-center justify-center px-10 text-center">
-                <div>
-                  <div className="mx-auto mb-6 flex h-32 w-32 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] text-4xl font-black text-white backdrop-blur-xl md:h-40 md:w-40 md:text-5xl">
-                    BV
-                  </div>
-                  <p className="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">
-                    Espacio para foto
-                  </p>
-                  <p className="mt-3 text-sm leading-6 text-slate-400">
-                    Luego reemplazamos este bloque por tu imagen profesional.
-                  </p>
+            <div className="absolute inset-0 flex items-center justify-center px-10 text-center">
+              <div>
+                <div className="mx-auto mb-6 flex h-32 w-32 items-center justify-center rounded-full border border-white/15 bg-white/[0.06] text-4xl font-black text-white backdrop-blur-xl md:h-40 md:w-40 md:text-5xl">
+                  BV
                 </div>
+                <p className="text-sm font-semibold uppercase tracking-[0.28em] text-cyan-200">
+                  Espacio para foto
+                </p>
+                <p className="mt-3 text-sm leading-6 text-slate-400">
+                  Coloca tu imagen en public/profile.webp y la reemplazamos aquí.
+                </p>
               </div>
             </div>
+          </div>
 
-            <div className="grid grid-cols-2 gap-3 pt-4">
-              <div className="rounded-2xl bg-white/[0.06] px-4 py-3">
-                <p className="text-2xl font-black text-white">4+</p>
-                <p className="text-xs text-slate-400">Proyectos</p>
-              </div>
-              <div className="rounded-2xl bg-white/[0.06] px-4 py-3">
-                <p className="text-2xl font-black text-white">Web</p>
-                <p className="text-xs text-slate-400">Full stack</p>
-              </div>
-            </div>
+          <div className="absolute -bottom-6 left-4 rounded-full border border-white/10 bg-white/[0.06] px-5 py-3 text-sm font-bold text-white backdrop-blur-2xl md:left-10">
+            4+ proyectos
+          </div>
+          <div className="absolute -right-2 top-10 rounded-full border border-white/10 bg-white/[0.06] px-5 py-3 text-sm font-bold text-white backdrop-blur-2xl md:right-8">
+            Web stack
           </div>
         </div>
       </div>
