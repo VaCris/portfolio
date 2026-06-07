@@ -1,128 +1,128 @@
 import { profile } from "@/data/portfolio";
 
 const inputStyles =
-  "w-full rounded-2xl border border-white/10 bg-white/[0.06] px-5 py-4 text-sm text-white outline-none transition placeholder:text-slate-500 focus:border-cyan-300/50 focus:bg-white/[0.08]";
+  "w-full border-0 border-b border-white/20 bg-transparent px-0 py-4 text-base text-white outline-none transition placeholder:text-white/30 focus:border-white md:text-lg";
 
 export function CTASection() {
   return (
-    <section id="contacto" className="relative px-6 py-28">
-      <div className="absolute inset-x-0 bottom-0 -z-10 h-96 bg-gradient-to-t from-cyan-300/10 to-transparent" />
+    <section id="contacto" className="relative overflow-hidden px-5 py-24 sm:px-8 md:px-10 md:py-32">
+      <div className="absolute inset-x-0 bottom-0 -z-10 h-[36rem] bg-[radial-gradient(circle_at_bottom,rgba(215,226,234,0.12),transparent_55%)]" />
 
-      <div className="mx-auto max-w-6xl overflow-hidden rounded-[2.5rem] border border-white/10 bg-white/[0.05] p-8 shadow-2xl shadow-black/40 backdrop-blur-2xl md:p-14">
-        <div className="grid gap-12 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-          <div>
-            <p className="mb-4 text-sm font-semibold uppercase tracking-[0.28em] text-cyan-300">
-              Contacto
-            </p>
+      <div className="mx-auto grid max-w-6xl gap-16 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+        <div>
+          <p className="mb-4 text-xs font-medium uppercase tracking-[0.35em] text-[#D7E2EA]/60">
+            Contacto
+          </p>
 
-            <h2 className="max-w-3xl text-4xl font-black tracking-[-0.05em] text-white md:text-6xl">
-              Hagamos que tu siguiente idea se vea y funcione mejor.
-            </h2>
+          <h2 className="max-w-3xl text-[clamp(3rem,8vw,7.5rem)] font-black uppercase leading-[0.88] tracking-[-0.07em] text-white">
+            Hablemos de tu idea.
+          </h2>
 
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-300">
-              Cuéntame brevemente qué necesitas y te responderé para coordinar
-              alcance, tiempos y próximos pasos.
-            </p>
+          <p className="mt-8 max-w-xl text-base font-light leading-8 text-[#D7E2EA]/70 md:text-lg">
+            Cuéntame qué necesitas construir o mejorar. Te responderé para
+            coordinar alcance, tiempos y próximos pasos.
+          </p>
 
-            <div className="mt-8 flex flex-wrap gap-3">
-              <a
-                href={profile.github}
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-full border border-white/15 px-5 py-3 text-sm font-bold text-white transition hover:bg-white/10"
-              >
-                GitHub
-              </a>
+          <div className="mt-10 flex flex-wrap gap-3">
+            <a
+              href={profile.github}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-white/20 px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-white transition hover:bg-white/10"
+            >
+              GitHub
+            </a>
 
-              <a
-                href={profile.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-full border border-white/15 px-5 py-3 text-sm font-bold text-white transition hover:bg-white/10"
-              >
-                LinkedIn
-              </a>
+            <a
+              href={profile.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="rounded-full border border-white/20 px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-white transition hover:bg-white/10"
+            >
+              LinkedIn
+            </a>
 
-              <a
-                href={`mailto:${profile.email}`}
-                className="rounded-full border border-white/15 px-5 py-3 text-sm font-bold text-white transition hover:bg-white/10"
-              >
-                Correo directo
-              </a>
-            </div>
-
-            <p className="mt-6 text-sm text-slate-400">{profile.location}</p>
+            <a
+              href={`mailto:${profile.email}`}
+              className="rounded-full border border-white/20 px-5 py-3 text-xs font-bold uppercase tracking-[0.18em] text-white transition hover:bg-white/10"
+            >
+              Correo
+            </a>
           </div>
 
-          <form
-            action={profile.formspreeEndpoint}
-            method="POST"
-            className="rounded-[2rem] border border-white/10 bg-slate-950/45 p-5 backdrop-blur-xl md:p-6"
-          >
-            <div className="grid gap-4 sm:grid-cols-2">
-              <label className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">
-                  Nombre
-                </span>
-                <input
-                  className={inputStyles}
-                  type="text"
-                  name="name"
-                  placeholder="Tu nombre"
-                  required
-                />
-              </label>
+          <p className="mt-8 text-sm text-[#D7E2EA]/45">{profile.location}</p>
+        </div>
 
-              <label className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">
-                  Correo
-                </span>
-                <input
-                  className={inputStyles}
-                  type="email"
-                  name="email"
-                  placeholder="correo@ejemplo.com"
-                  required
-                />
-              </label>
-            </div>
-
-            <label className="mt-4 block space-y-2">
-              <span className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">
-                Asunto
+        <form action={profile.formspreeEndpoint} method="POST" className="space-y-8">
+          <div className="grid gap-8 sm:grid-cols-2">
+            <label className="block">
+              <span className="text-xs font-bold uppercase tracking-[0.22em] text-[#D7E2EA]/45">
+                Nombre
               </span>
               <input
                 className={inputStyles}
                 type="text"
-                name="subject"
-                placeholder="Página web, landing, app, soporte..."
+                name="name"
+                placeholder="Tu nombre"
                 required
               />
             </label>
 
-            <label className="mt-4 block space-y-2">
-              <span className="text-xs font-bold uppercase tracking-[0.18em] text-slate-400">
-                Mensaje
+            <label className="block">
+              <span className="text-xs font-bold uppercase tracking-[0.22em] text-[#D7E2EA]/45">
+                Correo
               </span>
-              <textarea
-                className={`${inputStyles} min-h-36 resize-none`}
-                name="message"
-                placeholder="Cuéntame qué necesitas construir o mejorar."
+              <input
+                className={inputStyles}
+                type="email"
+                name="email"
+                placeholder="correo@ejemplo.com"
                 required
               />
             </label>
+          </div>
 
-            <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio" />
-            <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
+          <label className="block">
+            <span className="text-xs font-bold uppercase tracking-[0.22em] text-[#D7E2EA]/45">
+              Asunto
+            </span>
+            <input
+              className={inputStyles}
+              type="text"
+              name="subject"
+              placeholder="Página web, landing, app, soporte..."
+              required
+            />
+          </label>
+
+          <label className="block">
+            <span className="text-xs font-bold uppercase tracking-[0.22em] text-[#D7E2EA]/45">
+              Mensaje
+            </span>
+            <textarea
+              className={`${inputStyles} min-h-40 resize-none`}
+              name="message"
+              placeholder="Cuéntame qué necesitas construir o mejorar."
+              required
+            />
+          </label>
+
+          <input type="hidden" name="_subject" value="Nuevo mensaje desde el portfolio" />
+          <input type="text" name="_gotcha" className="hidden" tabIndex={-1} autoComplete="off" />
+
+          <div className="flex flex-col gap-4 border-t border-white/10 pt-8 sm:flex-row sm:items-center sm:justify-between">
+            <p className="max-w-sm text-xs leading-5 text-[#D7E2EA]/40">
+              El formulario usa Formspree. Reemplaza el endpoint en data/portfolio.ts para activarlo.
+            </p>
 
             <button
               type="submit"
-              className="mt-5 w-full rounded-full bg-white px-7 py-4 text-sm font-black text-slate-950 transition hover:scale-[1.01] hover:bg-cyan-200"
+              className="rounded-full bg-[#D7E2EA] px-8 py-4 text-xs font-black uppercase tracking-[0.22em] text-[#0C0C0C] transition hover:scale-[1.02] hover:bg-white"
             >
               Enviar mensaje
             </button>
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </section>
   );
