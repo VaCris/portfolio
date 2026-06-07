@@ -121,11 +121,6 @@ export function CTASection() {
             >
               Enviar mensaje
             </button>
-
-            <p className="mt-4 text-center text-xs leading-5 text-slate-500">
-              Este formulario usa Formspree. Reemplaza el endpoint en
-              <span className="text-slate-300"> data/portfolio.ts</span> para activarlo.
-            </p>
           </form>
         </div>
       </div>
