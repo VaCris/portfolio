@@ -1,22 +1,20 @@
 import { AboutSection } from "@/components/sections/AboutSection";
 import { CTASection } from "@/components/sections/CTASection";
-import { EducationSection } from "@/components/sections/EducationSection";
-import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { HeroSection } from "@/components/sections/HeroSection";
-import { Navbar } from "@/components/sections/Navbar";
+import { MarqueeSection } from "@/components/sections/MarqueeSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
+import { ServicesSection } from "@/components/sections/ServicesSection";
 import { TechStackSection } from "@/components/sections/TechStackSection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-hidden bg-slate-950 text-slate-200">
-      <Navbar />
+    <main className="min-h-screen overflow-x-clip bg-[#0C0C0C] text-[#D7E2EA]">
       <HeroSection />
+      <MarqueeSection />
       <AboutSection />
       <TechStackSection />
+      <ServicesSection />
       <ProjectsSection />
-      <ExperienceSection />
-      <EducationSection />
       <CTASection />
     </main>
   );
