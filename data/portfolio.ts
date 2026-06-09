@@ -11,12 +11,13 @@ export const profile = {
   location: "Lima, Perú",
   email: "vidalbryanalexander@gmail.com",
   github: "https://github.com/VaCris",
+  image: "/perfil.webp",
   linkedin: "https://www.linkedin.com/in/bryan-alexander-vidal-crispin-110410301",
   formspreeEndpoint: "https://formspree.io/f/mpqelabr",
   intro:
-    "Construyo aplicaciones web, interfaces modernas y soluciones digitales enfocadas en experiencia de usuario, rendimiento y estructura escalable.",
+    "Desarrollo aplicaciones web modernas y participo en la creación de soluciones digitales enfocadas en ofrecer experiencias claras, funcionales y accesibles.",
   summary:
-    "Especializado en el ecosistema de JavaScript moderno y el entorno .NET (C#). Me apasiona diseñar arquitecturas modulares, consumir APIs y mantener buenas prácticas para crear software robusto y mantenible.",
+    "Soy desarrollador de software y me gusta crear aplicaciones web que sean útiles, intuitivas y bien estructuradas. Disfruto aprender nuevas tecnologías, resolver problemas y mejorar continuamente mis habilidades tanto en frontend como en backend.",
 };
 
 export const highlights = [
@@ -79,7 +80,7 @@ export const experiences = [
     company: "JHARDSYSTEX",
     period: "Feb 2025 - Jun 2025",
     description:
-      "Desarrollo full-stack de una aplicación web para la gestión de tickets. Diseño y construcción de base de datos relacional, implementación de lógica de negocio y soporte en el proceso de despliegue en producción.",
+      "Desarrollo del frontend y diseño de la base de datos relacional para una aplicación web de gestión de tickets. Realización de pruebas funcionales para garantizar el correcto funcionamiento de los procesos clave del sistema.",
   },
   {
     title: "Desarrollador Web",

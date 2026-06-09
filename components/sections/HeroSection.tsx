@@ -37,18 +37,25 @@ export function HeroSection() {
         <Magnet padding={50} strength={4}>
           <div className="group relative mx-auto aspect-[4/5] overflow-hidden rounded-2xl border border-zinc-800/60 bg-[#111111] shadow-2xl transition-all duration-500 hover:border-zinc-700">
             <div className="absolute -inset-x-20 -top-20 h-40 bg-zinc-600/10 blur-[60px]" />
-            <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center opacity-80 transition-opacity duration-500 group-hover:opacity-100">
-              <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[#0C0C0C] border border-zinc-800 text-2xl font-light text-zinc-300 md:h-28 md:w-28 md:text-4xl">
-                BV
+
+            {profile.image ? (
+              <img
+                src={profile.image}
+                alt={`Foto de perfil de ${profile.name}`}
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="eager"
+                decoding="async"
+              />
+            ) : (
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center opacity-80">
+                <div className="mb-6 flex h-20 w-20 items-center justify-center rounded-full bg-[#0C0C0C] border border-zinc-800 text-2xl font-light text-zinc-300 md:h-28 md:w-28 md:text-4xl">
+                  BV
+                </div>
               </div>
-              <p className="text-[10px] md:text-xs font-mono uppercase tracking-[0.3em] text-zinc-500">
-                Tu Foto Aquí
-              </p>
-            </div>
+            )}
           </div>
         </Magnet>
       </FadeIn>
-
       <div className="relative z-20 mt-auto flex flex-col items-center justify-between gap-8 px-6 pb-12 md:flex-row md:items-end md:px-12 md:pb-12">
         <FadeIn delay={0.4} y={20}>
           <p className="max-w-[280px] text-center text-sm font-light leading-relaxed text-zinc-400 md:text-left md:text-base">
