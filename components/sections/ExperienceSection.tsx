@@ -1,27 +1,48 @@
 import { experiences } from "@/data/portfolio";
-import { SectionTitle } from "@/components/ui/SectionTitle";
 
 export function ExperienceSection() {
   return (
-    <section className="mx-auto max-w-6xl px-6 py-28">
-      <SectionTitle
-        eyebrow="Experiencia"
-        title="Perfil técnico orientado a ejecución."
-        description="He participado en desarrollo de interfaces, organización de componentes, integración de funcionalidades y despliegue de soluciones web."
-      />
+    <section id="experiencia" className="w-full py-28 border-t border-zinc-900 bg-[#0C0C0C]">
+      <div className="max-w-4xl mx-auto px-6">
+        {/* Subtítulo técnico sutil */}
+        <p className="text-xs font-mono tracking-widest text-zinc-600 uppercase mb-3">
 
-      <div className="relative ml-3 space-y-12 border-l border-white/10 pl-8">
-        {experiences.map((experience) => (
-          <div key={experience.title} className="relative">
-            <span className="absolute -left-[39px] top-2 h-4 w-4 rounded-full border border-cyan-300 bg-slate-950 shadow-[0_0_40px_rgba(34,211,238,0.65)]" />
-            <h3 className="text-2xl font-black tracking-[-0.03em] text-white md:text-3xl">
-              {experience.title}
-            </h3>
-            <p className="mt-4 max-w-3xl text-lg leading-8 text-slate-400">
-              {experience.description}
-            </p>
-          </div>
-        ))}
+        </p>
+        <h2 className="text-3xl font-bold text-[#D7E2EA] mb-16 tracking-tight">
+          Experiencia Profesional
+        </h2>
+
+        <div className="space-y-16">
+          {experiences.map((exp, index) => (
+            <div
+              key={index}
+              className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-8 group"
+            >
+              {/* Columna de Fechas */}
+              <div className="md:col-span-1">
+                <span className="text-sm font-mono text-zinc-500 block transition-colors group-hover:text-zinc-400 md:sticky md:top-24">
+                  {exp.period}
+                </span>
+              </div>
+
+              {/* Columna de Contenido */}
+              <div className="md:col-span-3 space-y-3">
+                <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+                  <h3 className="text-xl font-semibold text-[#D7E2EA] tracking-tight">
+                    {exp.title}
+                  </h3>
+                  <span className="text-sm font-medium text-zinc-500">
+                    en {exp.company}
+                  </span>
+                </div>
+
+                <p className="text-zinc-400 text-base leading-relaxed font-light max-w-2xl">
+                  {exp.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );

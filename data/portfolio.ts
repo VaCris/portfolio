@@ -1,7 +1,6 @@
 export const navLinks = [
   { label: "Sobre mí", href: "#sobre-mi" },
-  { label: "Tecnologías", href: "#tecnologias" },
-  { label: "Proyectos", href: "#proyectos" },
+  { label: "Experiencia", href: "#experiencia" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -12,49 +11,95 @@ export const profile = {
   location: "Lima, Perú",
   email: "vidalbryanalexander@gmail.com",
   github: "https://github.com/VaCris",
-  linkedin:
-    "https://www.linkedin.com/in/bryan-alexander-vidal-crispin-110410301",
-  formspreeEndpoint: "https://formspree.io/f/REEMPLAZA_TU_ID",
+  linkedin: "https://www.linkedin.com/in/bryan-alexander-vidal-crispin-110410301",
+  formspreeEndpoint: "https://formspree.io/f/mpqelabr",
   intro:
     "Construyo aplicaciones web, interfaces modernas y soluciones digitales enfocadas en experiencia de usuario, rendimiento y estructura escalable.",
   summary:
-    "Trabajo principalmente con tecnologías del ecosistema JavaScript, consumiendo APIs, implementando arquitecturas modulares y manteniendo buenas prácticas de desarrollo.",
+    "Especializado en el ecosistema de JavaScript moderno y el entorno .NET (C#). Me apasiona diseñar arquitecturas modulares, consumir APIs y mantener buenas prácticas para crear software robusto y mantenible.",
 };
 
 export const highlights = [
-  "Aplicaciones web modernas",
-  "Interfaces responsivas",
+  "Desarrollo Full-Stack (.NET & JS)",
+  "Interfaces responsivas y UX",
   "Integración de APIs REST",
-  "Arquitectura modular",
-  "Buenas prácticas de desarrollo",
-  "Automatización y tecnologías cloud",
+  "Gestión de Bases de Datos",
+  "Resolución de problemas críticos",
 ];
 
 export const techGroups = [
   {
     title: "Frontend",
     items: [
-      "HTML5",
-      "CSS3",
-      "Tailwind CSS",
-      "JavaScript ES6+",
+      "JavaScript (ES6+)",
+      "TypeScript",
       "React",
-      "Vite",
       "Next.js",
-      "jQuery",
+      "Vite",
+      "Tailwind CSS",
+      "HTML5 / CSS3",
     ],
   },
   {
     title: "Backend",
-    items: ["PHP", "Symfony", "Node.js", "NestJS", ".NET", "C#", "Java"],
+    items: [
+      "C#",
+      ".NET",
+      "Node.js",
+      "PHP"
+    ],
   },
   {
     title: "Bases de Datos",
-    items: ["MySQL", "SQL Server"],
+    items: ["SQL Server", "MySQL", "SQLite", "MariaDB"],
   },
   {
-    title: "Herramientas",
-    items: ["npm", "Git", "GitHub", "Postman", "Visual Studio Code", "Visual Studio"],
+    title: "Herramientas & Cloud",
+    items: ["Git", "GitHub", "Postman", "AWS / GCP (Básico)", "Visual Studio", "VS Code"],
+  },
+];
+
+export const experiences = [
+  {
+    title: "Técnico de Transmisión de Datos (Soporte TI)",
+    company: "ONPE",
+    period: "Abril 2026",
+    description:
+      "Gestión y habilitación de infraestructura informática crítica. Ejecución de protocolos de seguridad para la transmisión de datos oficiales e implementación de la Solución Tecnológica de Apoyo al Escrutinio (STAE).",
+  },
+  {
+    title: "Desarrollador Front-end",
+    company: "Lubricantes Claudia",
+    period: "Agosto 2025 - Diciembre 2025",
+    description:
+      "Desarrollo de frontend con arquitectura modular y organización de componentes reutilizables. Refactorización continua para mejorar la mantenibilidad y el rendimiento, implementando interfaces alineadas a las reglas de negocio.",
+  },
+  {
+    title: "Desarrollador Web",
+    company: "JHARDSYSTEX",
+    period: "Feb 2025 - Jun 2025",
+    description:
+      "Desarrollo full-stack de una aplicación web para la gestión de tickets. Diseño y construcción de base de datos relacional, implementación de lógica de negocio y soporte en el proceso de despliegue en producción.",
+  },
+  {
+    title: "Desarrollador Web",
+    company: "SERVISERC",
+    period: "Jul 2024 - Dic 2024",
+    description:
+      "Creación y mantenimiento de sitios web responsivos. Implementación de funcionalidades personalizadas según requerimientos del cliente, optimizando la experiencia de usuario (UX) y garantizando compatibilidad multiplataforma.",
+  }
+];
+
+export const education = [
+  {
+    title: "Desarrollo de Software",
+    institution: "SENATI",
+    period: "2025",
+  },
+  {
+    title: "Cloud Computing (AWS/Azure/GCP)",
+    institution: "Universidad Nacional de Ingeniería - UNI",
+    period: "2025",
   },
 ];
 
@@ -90,48 +135,13 @@ export const projects = [
     repositoryUrl: "https://github.com/VaCris/Ataraxia-Timer",
   },
   {
-    name: "Aputrak",
-    description:
-      "Participé en el rediseño de la interfaz de un planificador de horarios y actividades offline-first, mejorando la presentación visual y la experiencia de uso.",
-    stack: "Rediseño UI, Next.js, TypeScript, IndexedDB, Offline-first",
-    image:
-      "https://raw.githubusercontent.com/VaCris/VaCris/main/Aputrak%20%E2%80%94%20Schedule%20%26%20Activity%20Manager_page-0001.jpg",
-    imageAlt: "Captura del rediseño de interfaz de Aputrak",
-    liveUrl: "https://aputrak.onrender.com/",
-    repositoryUrl: "https://github.com/LavenderEdit/aputrak/tree/redesign/aputrak-ui",
-  },
-  {
     name: "Reservation API",
     description:
-      "API REST para gestión de reservas con autenticación, lógica de negocio y estructura backend mantenible.",
-    stack: "PHP, Symfony, JWT, REST API",
-    image: "",
+      "API REST para gestión de reservas con autenticación, lógica de negocio y estructura backend escalable.",
+    stack: "PHP, Symfony, JWT, REST API",// Ajustado a tu perfil deseado (o puedes devolverlo a PHP si el repo es 100% PHP)
+    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop", // Imagen genérica de código muy limpia
     imageAlt: "Vista conceptual del proyecto Reservation API",
     liveUrl: "",
     repositoryUrl: "https://github.com/VaCris/reservation-api",
-  },
-];
-
-export const experiences = [
-  {
-    title: "Desarrollador Frontend",
-    description:
-      "Participación en el desarrollo de interfaces web, organización de componentes reutilizables y mejora continua de aplicaciones enfocadas en rendimiento y mantenibilidad.",
-  },
-  {
-    title: "Desarrollador Web",
-    description:
-      "Desarrollo de aplicaciones web completas, implementación de bases de datos, integración de funcionalidades y despliegue de soluciones para clientes.",
-  },
-];
-
-export const education = [
-  {
-    title: "Desarrollo de Software",
-    institution: "SENATI",
-  },
-  {
-    title: "Cloud Computing",
-    institution: "Universidad Nacional de Ingeniería - UNI",
   },
 ];
