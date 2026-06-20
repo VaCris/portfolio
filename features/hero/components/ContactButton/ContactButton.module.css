@@ -1,0 +1,26 @@
+.button {
+  display: inline-flex;
+  padding: 0.75rem 2rem;
+  border-radius: 9999px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 500;
+  color: #fff;
+  background: linear-gradient(123deg, #010c1f 7%, #1b00b6 37%, #212ab0 72%, #0003be 100%);
+  box-shadow: 0 4px 4px rgba(40, 1, 181, 0.25), inset 4px 4px 12px #2821b1;
+  outline: 2px solid #fff;
+  outline-offset: -3px;
+  transition: transform .15s ease;
+}
+
+.button:hover {
+  transform: translateY(-2px) scale(1.01);
+  background: #d7e6ee;
+  color: #000;
+  box-shadow: 0 8px 24px rgba(11, 15, 19, 0.12);
+}
+
+.button:focus {
+  outline: 2px solid rgba(11, 15, 19, 0.12);
+  outline-offset: 3px;
+}

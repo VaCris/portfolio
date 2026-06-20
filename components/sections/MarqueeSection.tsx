@@ -3,14 +3,15 @@
 import { useEffect, useRef, useState } from "react";
 
 const images = [
-  "https://raw.githubusercontent.com/VaCris/VaCris/main/Docivo.png",
-  "https://raw.githubusercontent.com/VaCris/VaCris/main/splaygo.png",
-  "https://raw.githubusercontent.com/VaCris/VaCris/main/ATARAXIA.png",
-  "https://raw.githubusercontent.com/VaCris/VaCris/main/Aputrak%20%E2%80%94%20Schedule%20%26%20Activity%20Manager_page-0001.jpg",
-  "https://motionsites.ai/assets/hero-space-voyage-preview-eECLH3Yc.gif",
-  "https://motionsites.ai/assets/hero-codenest-preview-Cgppc2qV.gif",
-  "https://motionsites.ai/assets/hero-vex-ventures-preview-BczMFIiw.gif",
-  "https://motionsites.ai/assets/hero-stellar-ai-v2-preview-DjvxjG3C.gif",
+  "https://i.postimg.cc/qRXc3Dg4/Docivo.png",
+  "https://i.postimg.cc/gkK5W4Dd/splaygo.png",
+  "https://i.postimg.cc/qM7cNLTY/ataraxia.png",
+  "https://i.postimg.cc/2Sb4wSVf/Aputrak-Schedule-Activity-Manager-page-0001.jpg",
+  "https://i.postimg.cc/dVvy8VRD/eunoia.png",
+  "https://i.postimg.cc/pLZnkMkv/flowfy.png",
+  "https://i.postimg.cc/QdsTpdgs/serviserc.png",
+  "https://i.postimg.cc/W4sYfZrN/image.png",
+  "https://i.postimg.cc/QxtTSdVm/image.png",
 ];
 
 const firstRow = images.slice(0, 4);

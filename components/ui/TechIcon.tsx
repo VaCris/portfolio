@@ -19,7 +19,7 @@ const techIcons: Record<string, IconConfig> = {
   "next.js": { src: `${DEVICON_BASE_URL}/nextjs/nextjs-original.svg`, invert: true },
   vite: { src: `${DEVICON_BASE_URL}/vitejs/vitejs-original.svg` },
   "tailwind css": { src: `${DEVICON_BASE_URL}/tailwindcss/tailwindcss-original.svg` },
-  "html5 / css3": { src: `${DEVICON_BASE_URL}/html5/html5-original.svg` }, // Usamos el logo de HTML5 para representar ambos
+  "html5 / css3": { src: `${DEVICON_BASE_URL}/html5/html5-original.svg` },
 
   //backend
   "c#": { src: `${DEVICON_BASE_URL}/csharp/csharp-original.svg` },
@@ -30,8 +30,6 @@ const techIcons: Record<string, IconConfig> = {
   //bd
   "sql server": { src: `${DEVICON_BASE_URL}/microsoftsqlserver/microsoftsqlserver-plain.svg` },
   mysql: { src: `${DEVICON_BASE_URL}/mysql/mysql-original.svg` },
-  sqlite: { src: `${DEVICON_BASE_URL}/sqlite/sqlite-original.svg` },
-  mariadb: { src: `${DEVICON_BASE_URL}/mariadb/mariadb-original.svg` },
 
   //herramientas & cloud
   git: { src: `${DEVICON_BASE_URL}/git/git-original.svg` },

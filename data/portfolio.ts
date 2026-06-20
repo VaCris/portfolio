@@ -120,7 +120,7 @@ export const projects = [
     description:
       "Plataforma web para explorar películas y series con catálogo, búsqueda, filtros y reproductor dinámico.",
     stack: "React, Vite, Tailwind CSS, TMDB API",
-    image: "https://raw.githubusercontent.com/VaCris/VaCris/main/splaygo.png",
+    image: "https://i.postimg.cc/gkK5W4Dd/splaygo.png",
     imageAlt: "Captura del proyecto SPlay GO",
     liveUrl: "https://splay.evaluate.codes",
     repositoryUrl: "https://github.com/VaCris/splay-go",
@@ -137,12 +137,62 @@ export const projects = [
   },
   {
     name: "Reservation API",
+    status: "in-progress",
     description:
-      "API REST para gestión de reservas con autenticación, lógica de negocio y estructura backend escalable.",
-    stack: "PHP, Symfony, JWT, REST API",// Ajustado a tu perfil deseado (o puedes devolverlo a PHP si el repo es 100% PHP)
-    image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1000&auto=format&fit=crop", // Imagen genérica de código muy limpia
+      "API REST empresarial para gestión de reservas con autenticación JWT RS256, detección de conflictos vía Strategy Pattern, colas asíncronas con Messenger y notificaciones en tiempo real con Mercure.",
+    stack: "Symfony 7.3, PHP 8.2, MySQL (Doctrine), Mercure Hub, JWT",
+    image: "https://i.postimg.cc/QxtTSdVm/image.png",
     imageAlt: "Vista conceptual del proyecto Reservation API",
     liveUrl: "",
     repositoryUrl: "https://github.com/VaCris/reservation-api",
   },
+  {
+    name: "Aputrak",
+    status: "in-progress",
+    description: "Participe en el rediseño y desarrollo de la interfaz de usuario para una aplicación de gestión de horarios, implementando componentes reutilizables y optimizando la experiencia del usuario (UX) para mejorar la eficiencia en la organización de actividades.",
+    stack: "React, Tailwind CSS, Gestión de Horarios",
+    image: "https://i.postimg.cc/2Sb4wSVf/Aputrak-Schedule-Activity-Manager-page-0001.jpg",
+    imageAlt: "Captura del proyecto Aputrak Schedule Manager",
+    liveUrl: "https://aputrak.onrender.com/",
+    repositoryUrl: ""
+  },
+  {
+    name: "SPlay GO API",
+    status: "in-progress",
+    description: "API REST y Worker de procesamiento para streaming de video HLS. Gestiona colas de codificación con FFmpeg, almacenamiento en DigitalOcean Spaces y persistencia en Neon.",
+    stack: "Node.js, Express, FFmpeg, PostgreSQL (Neon), S3 API, TMDB API",
+    image: "https://i.postimg.cc/W4sYfZrN/image.png",
+    imageAlt: "Vista conceptual del proyecto SPlay GO API",
+    liveUrl: "",
+    repositoryUrl: ""
+  },
+  {
+    name: "Serviserc",
+    description: "Sitio web corporativo para empresa de servicios de limpieza, con diseño responsivo y contenido personalizado.",
+    stack: "HTML5, CSS3, JavaScript, Diseño Web",
+    image: "https://i.postimg.cc/QdsTpdgs/serviserc.png",
+    imageAlt: "Captura del proyecto Serviserc",
+    liveUrl: "https://serviserc.com/",
+    repositoryUrl: "",
+  },
+  {
+    name: "Eunoia",
+    status: "in-progress",
+    description: "Web busqueda de libros con integración a Google Books API, permitiendo explorar títulos, autores y detalles de libros de manera intuitiva.",
+    stack: "Next.js, Tailwind CSS, Diseño Web",
+    image: "https://i.postimg.cc/dVvy8VRD/eunoia.png",
+    imageAlt: "Captura del proyecto Eunoia",
+    liveUrl: "https://eunoia.onrender.com/",
+    repositoryUrl: " ",
+  },
+  {
+    name: "Flowfly",
+    status: "in-progress",
+    description: "Musica en streaming con catálogo dinámico, búsqueda avanzada y reproductor integrado para una experiencia musical fluida y personalizada. en desarrollo",
+    stack: "React, Tailwind CSS, Diseño Web",
+    image: "https://i.postimg.cc/pLZnkMkv/flowfy.png",
+    imageAlt: "Captura del proyecto Flowfy",
+    liveUrl: "https://flowfly.onrender.com/",
+    repositoryUrl: "",
+  }
 ];

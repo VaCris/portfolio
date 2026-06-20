@@ -21,10 +21,11 @@ export function CTASection() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
             <a
               href={`mailto:${profile.email}`}
-              className="rounded-full bg-[#D7E2EA] px-8 py-4 text-sm font-bold uppercase tracking-widest text-[#ffffff] transition-all duration-300 hover:bg-white hover:scale-105"
+              className="rounded-full bg-[#D7E2EA] text-[#000000] px-8 py-4 text-sm font-bold uppercase tracking-widest transition-all duration-300 hover:bg-[#000000] hover:text-[#D7E2EA] hover:scale-105"
             >
               Enviar Mensaje
             </a>
+
 
             <div className="flex gap-6 mt-4 sm:mt-0">
               <a
@@ -49,11 +50,8 @@ export function CTASection() {
       </div>
 
       <div className="max-w-6xl mx-auto px-6 mt-32 pt-8 border-t border-zinc-900/50 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-        <p className="text-[10px] md:text-xs font-mono text-zinc-600">
+        <p className="text-[10px] md:text-xs font-mono text-zinc-600 center">
           © {new Date().getFullYear()} {profile.name}. Todos los derechos reservados.
-        </p>
-        <p className="text-[10px] md:text-xs font-mono text-zinc-600 uppercase tracking-widest">
-          Next.js • Tailwind CSS • Framer Motion
         </p>
       </div>
     </section>

@@ -42,6 +42,11 @@ export function ProjectsSection() {
                   <h3 className="text-2xl font-semibold text-[#D7E2EA] mb-3 tracking-tight">
                     {project.name}
                   </h3>
+                  {project.status === 'in-progress' && (
+                    <p className="text-yellow-500 text-sm font-medium mb-2">
+                      Actualizando...
+                    </p>
+                  )}
                   <p className="text-zinc-400 text-sm leading-relaxed font-light mb-6 flex-grow">
                     {project.description}
                   </p>
