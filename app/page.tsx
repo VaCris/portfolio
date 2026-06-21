@@ -2,7 +2,7 @@ import { HeroSection } from "../features/hero/components/HeroSection/HeroSection
 import { MarqueeSection } from "@/components/sections/MarqueeSection";
 import { AboutSection } from "@/components/sections/AboutSection";
 import { TechStackSection } from "@/components/sections/TechStackSection";
-import { ExperienceSection } from "@/components/sections/ExperienceSection"; // ¡Nuevo componente!
+import { ExperienceSection } from "@/components/sections/ExperienceSection";
 import { ProjectsSection } from "@/components/sections/ProjectsSection";
 import { CTASection } from "@/components/sections/CTASection";
 

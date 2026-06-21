@@ -9,7 +9,7 @@ export const profile = {
   shortName: "Bryan Vidal",
   role: "Desarrollador de Software",
   location: "Lima, Perú",
-  email: "vidalbryanalexander@gmail.com",
+  email: "antoniovidal2031@gmail.com",
   github: "https://github.com/VaCris",
   image: "/perfil.webp",
   linkedin: "https://www.linkedin.com/in/bryan-alexander-vidal-crispin-110410301",

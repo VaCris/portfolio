@@ -1,36 +1,136 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Bryan Vidal - Portfolio Profesional
 
-## Getting Started
+¡Bienvenido al repositorio del portfolio profesional de **Bryan Alexander Vidal Crispín**, Desarrollador de Software enfocado en el desarrollo frontend, backend e integración de soluciones en la nube!
 
-First, run the development server:
+Este portfolio es una aplicación web moderna de una sola página (Landing Page) diseñada con animaciones fluidas, un diseño responsive premium y una arquitectura limpia basada en **Next.js** y **Cloudflare Pages**.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## 🛠️ Tecnologías y Herramientas
+
+El proyecto está construido con un stack tecnológico moderno de alto rendimiento:
+
+*   **Framework:** [Next.js 16.2.7](https://nextjs.org/) (utilizando React 19) con el App Router.
+*   **Estilos:** [Tailwind CSS v4](https://tailwindcss.com/) (con soporte nativo para PostCSS v4).
+*   **Animaciones:** [Framer Motion v12](https://www.framer.com/motion/) para micro-interacciones, efectos magnéticos y transiciones de texto.
+*   **Lenguaje:** [TypeScript](https://www.typescriptlang.org/) para tipado estático y robustez del código.
+*   **Gestor de Paquetes:** [pnpm](https://pnpm.io/) (v10).
+*   **Despliegue & Servidor:** [Cloudflare Pages](https://pages.cloudflare.com/) utilizando [@opennextjs/cloudflare](https://opennext.js.org/cloudflare/) para optimizar Next.js en la red de borde de Cloudflare.
+
+---
+
+## 📂 Estructura del Proyecto
+
+El código está organizado de manera modular y escalable:
+
+```text
+bryan-portfolio/
+├── app/                       # Enrutamiento de Next.js (App Router)
+│   ├── favicon.ico
+│   ├── globals.css            # Estilos globales y variables de Tailwind
+│   ├── layout.tsx             # Layout global y metadatos SEO
+│   └── page.tsx               # Página principal del portfolio
+├── components/                # Componentes reutilizables generales
+│   ├── animations/            # Wrappers y componentes animados (Framer Motion)
+│   │   ├── AnimatedText.tsx   # Animación de revelado de texto
+│   │   ├── FadeIn.tsx         # Desvanecimiento al entrar en pantalla
+│   │   └── Magnet.tsx         # Efecto magnético interactivo al pasar el cursor
+│   ├── sections/              # Secciones principales de la landing page
+│   │   ├── AboutSection.tsx   # Sobre mí
+│   │   ├── CTASection.tsx     # Formulario de contacto (Formspree)
+│   │   ├── EducationSection.tsx # Educación y certificaciones
+│   │   ├── ExperienceSection.tsx # Historial laboral detallado
+│   │   ├── MarqueeSection.tsx # Cinta en movimiento con highlights
+│   │   ├── Navbar.tsx         # Barra de navegación interactiva y responsive
+│   │   ├── ProjectsSection.tsx # Grid de proyectos con filtros y enlaces
+│   │   ├── ServicesSection.tsx # Servicios y áreas de especialización
+│   │   └── TechStackSection.tsx # Visualización de habilidades técnicas agrupadas
+│   └── ui/                    # Primitivas de UI atómicas
+│       ├── Badge.tsx          # Etiquetas visuales para tecnologías
+│       ├── SectionTitle.tsx   # Encabezados consistentes para secciones
+│       └── TechIcon.tsx       # Renderizador de iconos de tecnologías
+├── data/                      # Datos estáticos del sitio
+│   └── portfolio.ts           # Información personal, proyectos, experiencia y tecnologías
+├── features/                  # Módulos específicos organizados por feature
+│   └── hero/                  # Módulo de la sección de cabecera
+│       └── components/
+│           ├── ContactButton/ # Botón de contacto animado con estilos locales
+│           └── HeroSection/   # Sección Hero principal
+├── public/                    # Archivos estáticos (imágenes, webp, etc.)
+├── eslint.config.mjs          # Configuración del linter (ESLint)
+├── next.config.ts             # Configuración de Next.js
+├── open-next.config.ts        # Configuración de OpenNext para Cloudflare
+├── package.json               # Dependencias y scripts de ejecución
+├── tsconfig.json              # Configuración de TypeScript
+└── wrangler.toml              # Configuración de despliegue para Cloudflare Wrangler
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## ⚡ Funcionalidades Clave
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+1.  **Metadatos y SEO Optimizados:** Configuración completa en [layout.tsx](file:///mnt/tkoh/Proyectos/ME/bryan-portfolio/app/layout.tsx) que incluye OpenGraph en español (`es_PE`) y palabras clave para mejorar el posicionamiento.
+2.  **Sección de Proyectos Dinámica:** Grid que muestra proyectos interactivos ([Docivo](https://docivo.onrender.com/), [SPlay GO](https://splay.evaluate.codes), [Ataraxia Timer](https://ataraxiatimer.app/), APIs en PHP/Node, etc.), detallando el stack tecnológico utilizado, enlaces de producción y repositorio en GitHub.
+3.  **Línea de Tiempo de Experiencia:** Componente interactivo que detalla la trayectoria laboral (ONPE, Lubricantes Claudia, JHARDSYSTEX, SERVISERC).
+4.  **Habilidades Categorizadas:** Sección visual interactiva estructurada por Frontend, Backend, Bases de Datos y Herramientas/Cloud.
+5.  **Formulario de Contacto:** Integración con **Formspree** para recibir mensajes y consultas directamente al correo electrónico.
+6.  **Interacciones Premium:** Efectos de imán (Magnet) en botones, textos animados letra por letra e interacciones adaptadas para dispositivos móviles y de escritorio.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Instalación y Desarrollo Local
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Requisitos Previos
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Asegúrate de tener instalado [Node.js](https://nodejs.org/) y el gestor de paquetes **pnpm**:
 
-## Deploy on Vercel
+```bash
+npm install -g pnpm
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### 1. Clonar el Repositorio
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+git clone https://github.com/VaCris/bryan-portfolio.git
+cd bryan-portfolio
+```
+
+### 2. Instalar Dependencias
+
+```bash
+pnpm install
+```
+
+### 3. Ejecutar el Servidor de Desarrollo
+
+```bash
+pnpm dev
+```
+
+El proyecto estará disponible en [http://localhost:3000](http://localhost:3000).
+
+---
+
+## 🛠️ Scripts Disponibles
+
+*   `pnpm dev`: Inicia el servidor de desarrollo local de Next.js.
+*   `pnpm build`: Crea una build de producción optimizada de Next.js.
+*   `pnpm start`: Inicia el servidor de producción local de Next.js.
+*   `pnpm lint`: Ejecuta ESLint para analizar errores o advertencias de estilo de código.
+*   `pnpm deploy`: Compila el proyecto usando `opennextjs-cloudflare` y lo despliega directamente a Cloudflare Pages mediante Wrangler.
+
+---
+
+## ☁️ Despliegue en Cloudflare Pages
+
+El despliegue está optimizado con **OpenNextJS Cloudflare**, lo que permite ejecutar Next.js en Workers con soporte para funciones del lado del servidor (SSR) de forma eficiente.
+
+Para desplegar de forma manual o configurar integración continua (CI/CD):
+
+```bash
+pnpm deploy
+```
+
+Este script ejecuta:
+1.  `opennextjs-cloudflare build`: Transpila la aplicación Next.js en un Worker compatible con Cloudflare (`.open-next/worker.js`) y separa los recursos estáticos (`.open-next/assets`).
+2.  `opennextjs-cloudflare deploy`: Sube los recursos generados utilizando **Wrangler** a Cloudflare Pages de acuerdo a la configuración en [wrangler.toml](file:///mnt/tkoh/Proyectos/ME/bryan-portfolio/wrangler.toml).
