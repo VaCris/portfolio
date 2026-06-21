@@ -7,15 +7,15 @@ export const navLinks = [
 export const profile = {
   name: "Bryan Alexander Vidal Crispin",
   shortName: "Bryan Vidal",
-  role: "Desarrollador de Software",
+  role: "Desarrollador Web y de Software",
   location: "Lima, Perú",
-  email: "antoniovidal2031@gmail.com",
+  email: "bryan.vidal@studios-tkoh.online",
   github: "https://github.com/VaCris",
   image: "/perfil.webp",
   linkedin: "https://www.linkedin.com/in/bryan-alexander-vidal-crispin-110410301",
-  formspreeEndpoint: "https://formspree.io/f/mpqelabr",
+  formspreeEndpoint: process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT,
   intro:
-    "Desarrollo aplicaciones web modernas y participo en la creación de soluciones digitales enfocadas en ofrecer experiencias claras, funcionales y accesibles.",
+    "Construyo aplicaciones web y soluciones digitales que buscan ser intuitivas, funcionales y fáciles de mantener.",
   summary:
     "Soy desarrollador de software y me gusta crear aplicaciones web que sean útiles, intuitivas y bien estructuradas. Disfruto aprender nuevas tecnologías, resolver problemas y mejorar continuamente mis habilidades tanto en frontend como en backend.",
 };
