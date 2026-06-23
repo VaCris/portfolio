@@ -4,8 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "pnpm exec opennextjs-cloudflare build",
+    "start": "pnpm exec opennextjs-cloudflare start",
     "lint": "eslint",
     "deploy": "pnpm exec opennextjs-cloudflare build && pnpm exec opennextjs-cloudflare deploy"
   },
