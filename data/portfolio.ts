@@ -76,6 +76,13 @@ export const experiences = [
       "Desarrollo de frontend con arquitectura modular y organización de componentes reutilizables. Refactorización continua para mejorar la mantenibilidad y el rendimiento, implementando interfaces alineadas a las reglas de negocio.",
   },
   {
+    title: "Proyecto Freelance - Plataforma DRM",
+    company: "Freelance",
+    period: "Octubre 2025",
+    description:
+      `Participación en el desarrollo de una plataforma DRM para gestión de licencias y suscripciones utilizando NestJS, APIs REST y WebSockets. Colaboración en la integración de servicios externos, autenticación de usuarios y validación de acceso para aplicaciones web y móviles, asegurando la protección de contenido digital y la experiencia del usuario.`,
+  },
+  {
     title: "Desarrollador Web",
     company: "JHARDSYSTEX",
     period: "Feb 2025 - Jun 2025",
@@ -168,7 +175,7 @@ export const projects = [
   },
   {
     name: "Serviserc",
-    description: "Sitio web corporativo para empresa de servicios de limpieza, con diseño responsivo y contenido personalizado.",
+    description: "Sitio web corporativo para consultora empresarial, con diseño responsivo y contenido personalizado.",
     stack: "HTML5, CSS3, JavaScript, Diseño Web",
     image: "https://i.postimg.cc/QdsTpdgs/serviserc.png",
     imageAlt: "Captura del proyecto Serviserc",
@@ -178,17 +185,17 @@ export const projects = [
   {
     name: "Eunoia",
     status: "in-progress",
-    description: "Web busqueda de libros con integración a Google Books API, permitiendo explorar títulos, autores y detalles de libros de manera intuitiva.",
+    description: "Web de búsqueda de libros en desarrollo, actualmente con datos simulados (mock). Próximamente contará con integración a Google Books API para explorar títulos, autores y detalles de libros de forma intuitiva.",
     stack: "Next.js, Tailwind CSS, Diseño Web",
     image: "https://i.postimg.cc/dVvy8VRD/eunoia.png",
     imageAlt: "Captura del proyecto Eunoia",
-    liveUrl: "https://eunoia.onrender.com/",
+    liveUrl: "https://eunoia-fjui.onrender.com/",
     repositoryUrl: " ",
   },
   {
     name: "Flowfly",
     status: "in-progress",
-    description: "Musica en streaming con catálogo dinámico, búsqueda avanzada y reproductor integrado para una experiencia musical fluida y personalizada. en desarrollo",
+    description: "Música en streaming con catálogo dinámico, búsqueda avanzada y reproductor integrado para una experiencia musical fluida y personalizada. en desarrollo",
     stack: "React, Tailwind CSS, Diseño Web",
     image: "https://i.postimg.cc/pLZnkMkv/flowfy.png",
     imageAlt: "Captura del proyecto Flowfy",
