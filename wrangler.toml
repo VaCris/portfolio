@@ -1,4 +1,5 @@
 name = "portfolio"
 compatibility_date = "2026-06-20"
 compatibility_flags = ["nodejs_compat"]
-pages_build_output_dir = ".open-next"
+main = ".open-next/worker.js"
+workers_dev = true
