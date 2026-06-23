@@ -1,5 +1,9 @@
-name = "portfolio"
+name = "portfoliov4"
 compatibility_date = "2026-06-23"
 compatibility_flags = ["nodejs_compat"]
 main = ".open-next/worker.js"
 workers_dev = true
+preview_urls = false
+
+[assets]
+directory = ".open-next/assets"
