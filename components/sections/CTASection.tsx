@@ -7,6 +7,18 @@ import { profile } from "@/data/portfolio";
 export function CTASection() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [copied, setCopied] = useState(false);
+
+  const handleCopyEmail = async () => {
+    try {
+      await navigator.clipboard.writeText(profile.email);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Fallback: abrir mailto
+      window.location.href = `mailto:${profile.email}`;
+    }
+  };
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -51,24 +63,37 @@ export function CTASection() {
           <div className="lg:col-span-5 flex flex-col justify-between">
             <FadeIn y={20}>
               <p className="text-xs font-mono tracking-widest text-zinc-600 uppercase mb-8">
-                ¿qué sigue?
+                contacto
               </p>
               <h2 className="text-4xl md:text-5xl font-bold text-[#D7E2EA] mb-8 tracking-tighter">
-                Trabajemos juntos.
+                ¿Hablamos?
               </h2>
               <p className="text-zinc-400 text-base md:text-lg font-light mb-12 leading-relaxed">
-                Actualmente estoy abierto a nuevas oportunidades. Si tienes un proyecto en mente, buscas un desarrollador para tu equipo o simplemente quieres conectar, escríbeme directamente o utiliza el formulario de contacto.
+                Abierto a nuevos proyectos y colaboraciones. Escríbeme y vemos cómo encajo.
               </p>
 
               <div className="flex flex-col gap-6">
                 <div>
                   <p className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-2">Email</p>
-                  <a
-                    href={`mailto:${profile.email}`}
-                    className="text-lg font-medium text-[#D7E2EA] hover:text-white transition-colors underline decoration-zinc-700 underline-offset-4 hover:decoration-white"
+                  <button
+                    onClick={handleCopyEmail}
+                    className="flex items-center gap-2 text-lg font-medium text-[#D7E2EA] hover:text-white transition-colors cursor-pointer group"
                   >
-                    {profile.email}
-                  </a>
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      strokeWidth="2"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      className="w-5 h-5 text-zinc-500 group-hover:text-[#D7E2EA] transition-colors"
+                    >
+                      <rect width="20" height="16" x="2" y="4" rx="2" />
+                      <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                    </svg>
+                    {copied ? "¡Copiado!" : "Email"}
+                  </button>
                 </div>
 
                 <div>
