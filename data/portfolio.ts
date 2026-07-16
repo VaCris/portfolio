@@ -32,31 +32,37 @@ export const techGroups = [
   {
     title: "Frontend",
     items: [
-      "JavaScript (ES6+)",
-      "TypeScript",
       "React",
       "Next.js",
-      "Vite",
+      "TypeScript",
+      "JavaScript (ES6+)",
+      "HTML5",
+      "CSS3",
       "Tailwind CSS",
-      "HTML5 / CSS3",
+      "Vite",
     ],
   },
   {
     title: "Backend",
     items: [
+      "NestJS",
       "C#",
-      ".NET",
-      "Node.js",
-      "PHP"
     ],
   },
   {
     title: "Bases de Datos",
-    items: ["SQL Server", "MySQL", "SQLite", "MariaDB"],
+    items: ["SQL", "SQL Server", "MySQL", "Procedimientos Almacenados"],
   },
   {
-    title: "Herramientas & Cloud",
-    items: ["Git", "GitHub", "Postman", "AWS / GCP (Básico)", "Visual Studio", "VS Code"],
+    title: "Herramientas",
+    items: [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Postman",
+      "Visual Studio Code",
+      "Visual Studio",
+    ],
   },
 ];
 
@@ -130,17 +136,18 @@ export const projects = [
     image: "https://i.postimg.cc/gkK5W4Dd/splaygo.png",
     imageAlt: "Captura del proyecto SPlay GO",
     liveUrl: "https://splay.evaluate.codes",
-    repositoryUrl: "https://github.com/VaCris/splay-go",
+    repositoryUrl: "",
   },
   {
     name: "Ataraxia Timer",
+    status: "testing",
     description:
-      "Aplicación orientada a productividad y gestión del tiempo mediante sesiones enfocadas y lógica de trabajo tipo Pomodoro.",
+      "Aplicación de productividad desarrollada desde cero. Temporizador Pomodoro, tareas y etiquetas. Parte del ecosistema Axia de Studios TKOH.",
     stack: "React, APIs REST, Productividad",
     image: "https://raw.githubusercontent.com/VaCris/VaCris/main/ATARAXIA.png",
     imageAlt: "Captura del proyecto Ataraxia Timer",
     liveUrl: "https://ataraxiatimer.app/",
-    repositoryUrl: "https://github.com/VaCris/Ataraxia-Timer",
+    repositoryUrl: "",
   },
   {
     name: "Reservation API",
@@ -155,8 +162,8 @@ export const projects = [
   },
   {
     name: "Aputrak",
-    status: "in-progress",
-    description: "Participe en el rediseño y desarrollo de la interfaz de usuario para una aplicación de gestión de horarios, implementando componentes reutilizables y optimizando la experiencia del usuario (UX) para mejorar la eficiencia en la organización de actividades.",
+    status: "testing",
+    description: "Rediseño de interfaz e integración con API para aplicación de gestión de horarios y actividades. Componentes reutilizables y UX optimizada. Parte del ecosistema Axia de Studios TKOH.",
     stack: "React, Tailwind CSS, Gestión de Horarios",
     image: "https://i.postimg.cc/2Sb4wSVf/Aputrak-Schedule-Activity-Manager-page-0001.jpg",
     imageAlt: "Captura del proyecto Aputrak Schedule Manager",
@@ -175,11 +182,12 @@ export const projects = [
   },
   {
     name: "Serviserc",
-    description: "Sitio web corporativo para consultora empresarial, con diseño responsivo y contenido personalizado.",
+    status: "in-progress",
+    description: "Sitio web corporativo para consultora empresarial, actualmente en rediseño durante 2026 para mejorar diseño, rendimiento y experiencia de usuario.",
     stack: "HTML5, CSS3, JavaScript, Diseño Web",
     image: "https://i.postimg.cc/QdsTpdgs/serviserc.png",
     imageAlt: "Captura del proyecto Serviserc",
-    liveUrl: "https://serviserc.com/",
+    liveUrl: "https://vacris.github.io/landing-page-serviserc/",
     repositoryUrl: "",
   },
   {
@@ -190,16 +198,6 @@ export const projects = [
     image: "https://i.postimg.cc/dVvy8VRD/eunoia.png",
     imageAlt: "Captura del proyecto Eunoia",
     liveUrl: "https://eunoia-fjui.onrender.com/",
-    repositoryUrl: " ",
-  },
-  {
-    name: "Flowfly",
-    status: "in-progress",
-    description: "Música en streaming con catálogo dinámico, búsqueda avanzada y reproductor integrado para una experiencia musical fluida y personalizada. en desarrollo",
-    stack: "React, Tailwind CSS, Diseño Web",
-    image: "https://i.postimg.cc/pLZnkMkv/flowfy.png",
-    imageAlt: "Captura del proyecto Flowfy",
-    liveUrl: "https://flowfly.onrender.com/",
     repositoryUrl: "",
-  }
+  },
 ];
