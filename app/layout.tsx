@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Bryan Alexander Vidal Crispín | Desarrollador Web",
+  title: "Bryan Alexander Vidal Crispín | Desarrollador Web y de Software",
   description:
     "Portfolio profesional de Bryan Alexander Vidal Crispín, desarrollador web y de software en Lima, Perú.",
   keywords: [
