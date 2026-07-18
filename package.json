@@ -8,7 +8,7 @@
     "cf:build": "pnpm exec opennextjs-cloudflare build",
     "build": "pnpm next:build",
     "opennext": "pnpm next:build && pnpm cf:build",
-    "start": "pnpm exec opennextjs-cloudflare start",
+    "start": "next start",
     "lint": "eslint",
     "deploy": "pnpm exec opennextjs-cloudflare deploy",
     "open:build": "pnpm build"

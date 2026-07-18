@@ -2,7 +2,6 @@
 
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Magnet } from "@/components/animations/Magnet";
-import ContactButton from "../ContactButton/ContactButton";
 import { profile, navLinks } from "@/data/portfolio";
 
 export function HeroSection() {
@@ -61,9 +60,6 @@ export function HeroSection() {
           <p className="max-w-[280px] text-center text-sm font-light leading-relaxed text-zinc-400 md:text-left md:text-base">
             {profile.intro}
           </p>
-        </FadeIn>
-        <FadeIn delay={0.5} y={20}>
-          <ContactButton href="#contacto">Hablemos</ContactButton>
         </FadeIn>
       </div>
     </section>

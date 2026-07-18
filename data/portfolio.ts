@@ -183,8 +183,8 @@ export const projects = [
   {
     name: "Serviserc",
     status: "in-progress",
-    description: "Sitio web corporativo para consultora empresarial, actualmente en rediseño durante 2026 para mejorar diseño, rendimiento y experiencia de usuario.",
-    stack: "HTML5, CSS3, JavaScript, Diseño Web",
+    description: "Sitio web corporativo migrado de HTML/CSS/JS a Next.js 16 para mejorar SEO, rendimiento y experiencia de desarrollo. Implementado con React 19, TypeScript y Tailwind CSS 4.",
+    stack: "Next.js 16, React 19, TypeScript, Tailwind CSS 4",
     image: "https://i.postimg.cc/QdsTpdgs/serviserc.png",
     imageAlt: "Captura del proyecto Serviserc",
     liveUrl: "https://vacris.github.io/landing-page-serviserc/",
@@ -198,6 +198,15 @@ export const projects = [
     image: "https://i.postimg.cc/dVvy8VRD/eunoia.png",
     imageAlt: "Captura del proyecto Eunoia",
     liveUrl: "https://eunoia-fjui.onrender.com/",
+    repositoryUrl: "",
+  },
+  {
+    name: "Studios TKOH! Web",
+    description: "Página web institucional de Studios TKOH!. Desarrollo del sitio corporativo con diseño moderno, sección de servicios, proyectos y contacto.",
+    stack: "Angular 21, TypeScript, Tailwind CSS 4, GSAP",
+    image: "https://i.ibb.co/Rd4gYVW/proyecto-studios-tkoh.png",
+    imageAlt: "Captura del proyecto Studios TKOH! Web",
+    liveUrl: "https://studios-tkoh.online",
     repositoryUrl: "",
   },
 ];

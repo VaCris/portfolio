@@ -25,12 +25,6 @@ export function Navbar() {
           ))}
         </div>
 
-        <a
-          href={`mailto:${profile.email}`}
-          className="rounded-full bg-[#D7E2EA] px-5 py-2.5 text-xs font-bold uppercase tracking-wider text-[#0C0C0C] transition-all duration-300 hover:bg-white hover:scale-105"
-        >
-          Hablemos
-        </a>
       </nav>
     </header>
   );

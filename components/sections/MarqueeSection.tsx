@@ -8,10 +8,10 @@ const images = [
   "https://i.postimg.cc/qM7cNLTY/ataraxia.png",
   "https://i.postimg.cc/2Sb4wSVf/Aputrak-Schedule-Activity-Manager-page-0001.jpg",
   "https://i.postimg.cc/dVvy8VRD/eunoia.png",
-  "https://i.postimg.cc/pLZnkMkv/flowfy.png",
   "https://i.postimg.cc/QdsTpdgs/serviserc.png",
   "https://i.postimg.cc/W4sYfZrN/image.png",
   "https://i.postimg.cc/QxtTSdVm/image.png",
+  "https://i.ibb.co/Rd4gYVW/proyecto-studios-tkoh.png",
 ];
 
 const firstRow = images.slice(0, 4);
