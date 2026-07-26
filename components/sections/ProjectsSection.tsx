@@ -5,13 +5,13 @@ import { projects } from "@/data/portfolio";
 
 export function ProjectsSection() {
   return (
-    <section id="proyectos" className="w-full py-28 border-t border-zinc-900 bg-[#0C0C0C]">
+    <section id="proyectos" className="w-full py-28 border-t border-zinc-900 bg-background">
       <div className="max-w-6xl mx-auto px-6">
         <FadeIn y={20}>
           <p className="text-xs font-mono tracking-widest text-zinc-600 uppercase mb-3">
 
           </p>
-          <h2 className="text-3xl font-bold text-[#D7E2EA] mb-16 tracking-tight">
+          <h2 className="text-3xl font-bold text-foreground mb-16 tracking-tight">
             Proyectos
           </h2>
         </FadeIn>
@@ -39,7 +39,7 @@ export function ProjectsSection() {
                 </div>
 
                 <div className="flex flex-col flex-grow">
-                  <h3 className="text-2xl font-semibold text-[#D7E2EA] mb-3 tracking-tight">
+                  <h3 className="text-2xl font-semibold text-foreground mb-3 tracking-tight">
                     {project.name}
                   </h3>
                   {project.status === 'in-progress' && (
@@ -67,8 +67,8 @@ export function ProjectsSection() {
                       <a
                         href={project.liveUrl}
                         target="_blank"
-                        rel="noreferrer"
-                        className="text-sm font-medium text-[#D7E2EA] transition-colors hover:text-white"
+                        rel="noopener noreferrer"
+                        className="text-sm font-medium text-foreground transition-colors hover:text-white"
                       >
                         Ver sitio ↗
                       </a>
@@ -77,7 +77,7 @@ export function ProjectsSection() {
                       <a
                         href={project.repositoryUrl}
                         target="_blank"
-                        rel="noreferrer"
+                        rel="noopener noreferrer"
                         className="text-sm font-medium text-zinc-500 transition-colors hover:text-zinc-300"
                       >
                         Código ↗

@@ -64,7 +64,7 @@ function MarqueeRow({ items, direction }: { items: string[]; direction: "left" |
 
 export function MarqueeSection() {
   return (
-    <section className="bg-[#0C0C0C] pt-14 pb-8 sm:pt-20 md:pt-24">
+    <section className="bg-background pt-14 pb-8 sm:pt-20 md:pt-24">
       <div className="flex flex-col gap-3">
         <MarqueeRow items={firstRow} direction="right" />
         <MarqueeRow items={secondRow} direction="left" />

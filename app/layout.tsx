@@ -1,8 +1,21 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import { Kanit } from "next/font/google";
 import "./globals.css";
 
+const kanit = Kanit({
+  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata: Metadata = {
-  title: "Bryan Alexander Vidal Crispín | Desarrollador Web y de Software",
+  title: "Bryan Vidal | Desarrollador Web",
   description:
     "Portfolio profesional de Bryan Alexander Vidal Crispín, desarrollador web y de software en Lima, Perú.",
   keywords: [
@@ -17,11 +30,17 @@ export const metadata: Metadata = {
   authors: [{ name: "Bryan Alexander Vidal Crispín" }],
   creator: "Bryan Alexander Vidal Crispín",
   openGraph: {
-    title: "Bryan Alexander Vidal Crispín | Desarrollador Web",
+    title: "Bryan Vidal | Desarrollador Web",
     description:
       "Aplicaciones web modernas, interfaces responsivas e integración de APIs.",
     type: "website",
     locale: "es_PE",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Bryan Vidal | Desarrollador Web",
+    description:
+      "Aplicaciones web modernas, interfaces responsivas e integración de APIs.",
   },
 };
 
@@ -31,7 +50,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="es">
+    <html lang="es" className={kanit.variable}>
       <body>{children}</body>
     </html>
   );

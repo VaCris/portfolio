@@ -2,13 +2,13 @@ import { experiences } from "@/data/portfolio";
 
 export function ExperienceSection() {
   return (
-    <section id="experiencia" className="w-full py-28 border-t border-zinc-900 bg-[#0C0C0C]">
+    <section id="experiencia" className="w-full py-28 border-t border-zinc-900 bg-background">
       <div className="max-w-4xl mx-auto px-6">
         {/* Subtítulo técnico sutil */}
         <p className="text-xs font-mono tracking-widest text-zinc-600 uppercase mb-3">
 
         </p>
-        <h2 className="text-3xl font-bold text-[#D7E2EA] mb-16 tracking-tight">
+        <h2 className="text-3xl font-bold text-foreground mb-16 tracking-tight">
           Experiencia Profesional
         </h2>
 
@@ -28,7 +28,7 @@ export function ExperienceSection() {
               {/* Columna de Contenido */}
               <div className="md:col-span-3 space-y-3">
                 <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-                  <h3 className="text-xl font-semibold text-[#D7E2EA] tracking-tight">
+                  <h3 className="text-xl font-semibold text-foreground tracking-tight">
                     {exp.title}
                   </h3>
                   <span className="text-sm font-medium text-zinc-500">

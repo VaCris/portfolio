@@ -8,7 +8,7 @@ import { CTASection } from "@/components/sections/CTASection";
 
 export default function Home() {
   return (
-    <main className="min-h-screen overflow-x-clip bg-[#0C0C0C] text-[#D7E2EA] selection:bg-zinc-800 selection:text-white">
+    <main className="min-h-screen overflow-x-hidden bg-background text-foreground selection:bg-zinc-800 selection:text-white">
       <HeroSection />
       <MarqueeSection />
 
