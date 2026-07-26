@@ -6,7 +6,7 @@ import { techGroups } from "@/data/portfolio";
 
 export function TechStackSection() {
   return (
-    <section id="tecnologias" className="w-full pb-28 bg-[#0C0C0C]">
+    <section id="tecnologias" className="w-full pb-28 bg-background">
       <div className="max-w-4xl mx-auto px-6">
         <FadeIn y={20}>
           <p className="text-xs font-mono tracking-widest text-zinc-600 uppercase mb-12">
@@ -38,7 +38,7 @@ export function TechStackSection() {
                         <div className="flex h-5 w-5 items-center justify-center opacity-70 grayscale transition-all duration-300 group-hover:opacity-100 group-hover:grayscale-0">
                           <TechIcon name={item} className="h-full w-full" />
                         </div>
-                        <span className="text-sm font-medium text-zinc-400 transition-colors duration-300 group-hover:text-[#D7E2EA]">
+                        <span className="text-sm font-medium text-zinc-400 transition-colors duration-300 group-hover:text-foreground">
                           {item}
                         </span>
                       </div>

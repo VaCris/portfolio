@@ -55,7 +55,7 @@ export function CTASection() {
   };
 
   return (
-    <section id="contacto" className="w-full pt-32 pb-12 border-t border-zinc-900 bg-[#0C0C0C]">
+    <section id="contacto" className="w-full pt-32 pb-12 border-t border-zinc-900 bg-background">
       <div className="max-w-6xl mx-auto px-6">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8">
 
@@ -65,7 +65,7 @@ export function CTASection() {
               <p className="text-xs font-mono tracking-widest text-zinc-600 uppercase mb-8">
                 contacto
               </p>
-              <h2 className="text-4xl md:text-5xl font-bold text-[#D7E2EA] mb-8 tracking-tighter">
+              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-8 tracking-tighter">
                 ¿Hablamos?
               </h2>
               <p className="text-zinc-400 text-base md:text-lg font-light mb-12 leading-relaxed">
@@ -77,7 +77,7 @@ export function CTASection() {
                   <p className="text-xs font-mono text-zinc-600 uppercase tracking-widest mb-2">Email</p>
                   <button
                     onClick={handleCopyEmail}
-                    className="flex items-center gap-2 text-lg font-medium text-[#D7E2EA] hover:text-white transition-colors cursor-pointer group"
+                    className="flex items-center gap-2 text-lg font-medium text-foreground hover:text-white transition-colors cursor-pointer group"
                   >
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
@@ -87,7 +87,7 @@ export function CTASection() {
                       strokeWidth="2"
                       strokeLinecap="round"
                       strokeLinejoin="round"
-                      className="w-5 h-5 text-zinc-500 group-hover:text-[#D7E2EA] transition-colors"
+                      className="w-5 h-5 text-zinc-500 group-hover:text-foreground transition-colors"
                     >
                       <rect width="20" height="16" x="2" y="4" rx="2" />
                       <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
@@ -102,16 +102,16 @@ export function CTASection() {
                     <a
                       href={profile.github}
                       target="_blank"
-                      rel="noreferrer"
-                      className="text-sm font-mono uppercase tracking-widest text-zinc-500 transition-colors hover:text-[#D7E2EA]"
+                      rel="noopener noreferrer"
+                      className="text-sm font-mono uppercase tracking-widest text-zinc-500 transition-colors hover:text-foreground"
                     >
                       GitHub
                     </a>
                     <a
                       href={profile.linkedin}
                       target="_blank"
-                      rel="noreferrer"
-                      className="text-sm font-mono uppercase tracking-widest text-zinc-500 transition-colors hover:text-[#D7E2EA]"
+                      rel="noopener noreferrer"
+                      className="text-sm font-mono uppercase tracking-widest text-zinc-500 transition-colors hover:text-foreground"
                     >
                       LinkedIn
                     </a>
@@ -138,8 +138,8 @@ export function CTASection() {
                     onChange={handleChange}
                     required
                     autoComplete="name"
-                    placeholder="Tu nombre"
-                    className="w-full bg-[#161616]/60 border border-zinc-800 rounded-lg px-4 py-3 text-sm text-[#D7E2EA] placeholder-zinc-700 outline-none transition-all duration-300 focus:border-zinc-700 focus:bg-[#161616]"
+placeholder="Tu nombre"
+                     className="w-full bg-[#161616]/60 border border-zinc-800 rounded-lg px-4 py-3 text-sm text-foreground placeholder-zinc-700 outline-none transition-all duration-300 focus:border-zinc-700 focus:bg-[#161616]"
                   />
                 </div>
 
@@ -155,8 +155,8 @@ export function CTASection() {
                     onChange={handleChange}
                     required
                     autoComplete="email"
-                    placeholder="ejemplo@email.com"
-                    className="w-full bg-[#161616]/60 border border-zinc-800 rounded-lg px-4 py-3 text-sm text-[#D7E2EA] placeholder-zinc-700 outline-none transition-all duration-300 focus:border-zinc-700 focus:bg-[#161616]"
+placeholder="ejemplo@email.com"
+                     className="w-full bg-[#161616]/60 border border-zinc-800 rounded-lg px-4 py-3 text-sm text-foreground placeholder-zinc-700 outline-none transition-all duration-300 focus:border-zinc-700 focus:bg-[#161616]"
                   />
                 </div>
 
@@ -172,14 +172,14 @@ export function CTASection() {
                     required
                     rows={5}
                     placeholder="Escribe tu mensaje aquí..."
-                    className="w-full bg-[#161616]/60 border border-zinc-800 rounded-lg px-4 py-3 text-sm text-[#D7E2EA] placeholder-zinc-700 outline-none resize-none transition-all duration-300 focus:border-zinc-700 focus:bg-[#161616]"
+                    className="w-full bg-[#161616]/60 border border-zinc-800 rounded-lg px-4 py-3 text-sm text-foreground placeholder-zinc-700 outline-none resize-none transition-all duration-300 focus:border-zinc-700 focus:bg-[#161616]"
                   />
                 </div>
 
                 <button
                   type="submit"
                   disabled={status === "submitting"}
-                  className="w-full rounded-lg bg-[#D7E2EA] text-[#000000] py-4 text-xs font-bold uppercase tracking-widest transition-all duration-300 hover:bg-[#000000] hover:text-[#D7E2EA] border border-[#D7E2EA] hover:border-zinc-800 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
+                    className="w-full rounded-lg bg-foreground text-black py-4 text-xs font-bold uppercase tracking-widest transition-all duration-300 hover:bg-black hover:text-foreground border border-foreground hover:border-zinc-800 disabled:opacity-50 disabled:cursor-not-allowed cursor-pointer"
                 >
                   {status === "submitting" ? "Enviando..." : "Enviar Mensaje"}
                 </button>
@@ -207,7 +207,7 @@ export function CTASection() {
       </div>
 
       <div className="max-w-6xl mx-auto px-6 mt-32 pt-8 border-t border-zinc-900/50 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
-        <p className="text-[10px] md:text-xs font-mono text-zinc-600 center">
+        <p className="text-[10px] md:text-xs font-mono text-zinc-600 text-center">
           © {new Date().getFullYear()} {profile.name}. Todos los derechos reservados.
         </p>
       </div>

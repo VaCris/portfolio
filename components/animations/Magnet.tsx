@@ -59,7 +59,7 @@ export function Magnet({
       className={className}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      style={{ transform, transition, willChange: "transform" }}
+      style={{ transform, transition }}
     >
       {children}
     </div>

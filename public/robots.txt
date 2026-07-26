@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://portfoliov4.vidalbryanalexander.workers.dev/sitemap.xml
