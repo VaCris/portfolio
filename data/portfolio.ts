@@ -47,6 +47,8 @@ export const techGroups = [
     items: [
       "NestJS",
       "C#",
+      "PHP",
+      "Java",
     ],
   },
   {
@@ -182,7 +184,7 @@ export const projects = [
   },
   {
     name: "Serviserc",
-    status: "in-progress",
+    status: "completed",
     description: "Sitio web corporativo migrado de HTML/CSS/JS a Next.js 16 para mejorar SEO, rendimiento y experiencia de desarrollo. Implementado con React 19, TypeScript y Tailwind CSS 4.",
     stack: "Next.js 16, React 19, TypeScript, Tailwind CSS 4",
     image: "https://i.postimg.cc/QdsTpdgs/serviserc.png",
@@ -207,6 +209,26 @@ export const projects = [
     image: "https://i.ibb.co/Rd4gYVW/proyecto-studios-tkoh.png",
     imageAlt: "Captura del proyecto Studios TKOH! Web",
     liveUrl: "https://studios-tkoh.online",
+    repositoryUrl: "",
+  },
+  {
+    name: "AnnouncementPlugin",
+    status: "in-progress",
+    description: "Colaboración en plugin de anuncios para Minecraft. Contribuciones en listeners de eventos de jugador, sistema de placeholders dinámicos, entrega dirigida por audiencia, integración con Discord y Redis Pub/Sub.",
+    stack: "Java 21, Spigot/Paper API, Redis, Discord Webhooks, YAML, JUnit 5",
+    image: "https://raw.githubusercontent.com/LavenderEdit/AnnouncementPlugin/main/preview.png",
+    imageAlt: "Captura del plugin AnnouncementPlugin para Minecraft",
+    liveUrl: "",
+    repositoryUrl: "https://github.com/LavenderEdit/AnnouncementPlugin",
+  },
+  {
+    name: "PrestaApp Mobile",
+    status: "in-progress",
+    description: "Colaboración en app móvil de gestión de préstamos. Contribuciones en UI/UX (Bento Grid, animaciones de resorte, diseño Yape-style), seguridad (PBKDF2, bloqueo por intentos, protección de pantalla), backend (CI/CD, tests unitarios, paginación, generación de PDF en background), y refactorización de código.",
+    stack: "Flutter, Dart, Riverpod, GoRouter, SQLCipher, PBKDF2",
+    image: "https://i.ibb.co/6RLk1JVh/Prest-App-Doc.webp",
+    imageAlt: "Captura de la aplicación PrestaApp Mobile",
+    liveUrl: "https://prestapp.studios-tkoh.online/",
     repositoryUrl: "",
   },
 ];
