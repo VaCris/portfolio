@@ -193,7 +193,7 @@ export const projects = [
   },
   {
     name: "MotorDesk",
-    description: "Participación en la arquitectura frontend con React, TypeScript, Redux Toolkit, Redux Saga y Dexie. Implementación de flujos de ventas, sincronización offline, módulos de reportes, componentes reutilizables y optimizaciones de rendimiento y responsive design.",
+    description: "Colaboré en MotorDesk, una aplicación de gestión de flotas y facturación electrónica. Trabajé sobre código existente en React, TypeScript, Redux Toolkit, Redux Saga y Dexie, aportando en mejoras de interfaz, gestión de estados y sincronización offline. Esta experiencia en un proyecto de mayor escala me permitió crecer leyendo código ajeno, resolviendo problemas concretos y aprendiendo a trabajar en equipo.",
     stack: "React, TypeScript, Vite, Redux Toolkit, Redux Saga, Dexie, Tailwind CSS 4",
     image: "",
     imageAlt: "Captura del proyecto MotorDesk",
