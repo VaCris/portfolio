@@ -1,6 +1,7 @@
 "use client";
 
 import { FadeIn } from "@/components/animations/FadeIn";
+import Image from "next/image";
 import { projects } from "@/data/portfolio";
 
 export function ProjectsSection() {
@@ -23,11 +24,14 @@ export function ProjectsSection() {
 
                 <div className="relative mb-6 aspect-video w-full overflow-hidden rounded-xl border border-zinc-800/50 bg-zinc-900">
                   {project.image ? (
-                    <img
+                    <Image
                       src={project.image}
                       alt={project.imageAlt}
-                      className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                      fill
+                      sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
                       loading="lazy"
+                      quality={80}
                     />
                   ) : (
                     <div className="flex h-full w-full items-center justify-center bg-zinc-900">

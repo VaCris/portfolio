@@ -3,7 +3,7 @@ import { Kanit } from "next/font/google";
 import "./globals.css";
 
 const kanit = Kanit({
-  weight: ["300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700"],
   subsets: ["latin"],
   variable: "--font-sans",
   display: "swap",
@@ -51,6 +51,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={kanit.variable}>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="preconnect" href="https://i.postimg.cc" />
+        <link rel="preconnect" href="https://i.ibb.co" />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+      </head>
       <body>{children}</body>
     </html>
   );
