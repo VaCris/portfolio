@@ -173,16 +173,6 @@ export const projects = [
     repositoryUrl: ""
   },
   {
-    name: "SPlay GO API",
-    status: "in-progress",
-    description: "API REST y Worker de procesamiento para streaming de video HLS. Gestiona colas de codificación con FFmpeg, almacenamiento en DigitalOcean Spaces y persistencia en Neon.",
-    stack: "Node.js, Express, FFmpeg, PostgreSQL (Neon), S3 API, TMDB API",
-    image: "https://i.postimg.cc/W4sYfZrN/image.png",
-    imageAlt: "Vista conceptual del proyecto SPlay GO API",
-    liveUrl: "",
-    repositoryUrl: ""
-  },
-  {
     name: "Serviserc",
     status: "completed",
     description: "Sitio web corporativo migrado de HTML/CSS/JS a Next.js 16 para mejorar SEO, rendimiento y experiencia de desarrollo. Implementado con React 19, TypeScript y Tailwind CSS 4.",
@@ -190,16 +180,6 @@ export const projects = [
     image: "https://i.postimg.cc/QdsTpdgs/serviserc.png",
     imageAlt: "Captura del proyecto Serviserc",
     liveUrl: "https://vacris.github.io/landing-page-serviserc/",
-    repositoryUrl: "",
-  },
-  {
-    name: "Eunoia",
-    status: "in-progress",
-    description: "Web de búsqueda de libros en desarrollo, actualmente con datos simulados (mock). Próximamente contará con integración a Google Books API para explorar títulos, autores y detalles de libros de forma intuitiva.",
-    stack: "Next.js, Tailwind CSS, Diseño Web",
-    image: "https://i.postimg.cc/dVvy8VRD/eunoia.png",
-    imageAlt: "Captura del proyecto Eunoia",
-    liveUrl: "https://eunoia-fjui.onrender.com/",
     repositoryUrl: "",
   },
   {
@@ -212,14 +192,22 @@ export const projects = [
     repositoryUrl: "",
   },
   {
-    name: "AnnouncementPlugin",
-    status: "in-progress",
-    description: "Colaboración en plugin de anuncios para Minecraft. Contribuciones en listeners de eventos de jugador, sistema de placeholders dinámicos, entrega dirigida por audiencia, integración con Discord y Redis Pub/Sub.",
-    stack: "Java 21, Spigot/Paper API, Redis, Discord Webhooks, YAML, JUnit 5",
-    image: "https://raw.githubusercontent.com/LavenderEdit/AnnouncementPlugin/main/preview.png",
-    imageAlt: "Captura del plugin AnnouncementPlugin para Minecraft",
+    name: "MotorDesk",
+    description: "Colaboré en MotorDesk, una aplicación de gestión de flotas y facturación electrónica. Trabajé sobre código existente en React, TypeScript, Redux Toolkit, Redux Saga y Dexie, aportando en mejoras de interfaz, gestión de estados y sincronización offline. Esta experiencia en un proyecto de mayor escala me permitió crecer leyendo código ajeno, resolviendo problemas concretos y aprendiendo a trabajar en equipo.",
+    stack: "React, TypeScript, Vite, Redux Toolkit, Redux Saga, Dexie, Tailwind CSS 4",
+    image: "",
+    imageAlt: "Captura del proyecto MotorDesk",
     liveUrl: "",
-    repositoryUrl: "https://github.com/LavenderEdit/AnnouncementPlugin",
+    repositoryUrl: "",
+  },
+  {
+    name: "Telegram Media Downloader",
+    description: "Extensión de Chrome con Manifest V3 que restaura el acceso al botón de descarga nativo de Telegram Web en el visor multimedia y Stories. Implementación de Content Scripts, manipulación del DOM y Service Workers, manteniendo las descargas mediante el sistema nativo de Telegram y sin almacenar ni interceptar los archivos.",
+    stack: "JavaScript, Chrome Extensions, Manifest V3, DOM API, Service Workers, HTML, CSS",
+    image: "",
+    imageAlt: "Captura del proyecto Telegram Media Downloader",
+    liveUrl: "https://vacris.github.io/telegram-web-capture/",
+    repositoryUrl: "https://github.com/VaCris/telegram-web-capture",
   },
   {
     name: "PrestaApp Mobile",

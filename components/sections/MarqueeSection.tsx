@@ -7,7 +7,6 @@ const images = [
   "https://i.postimg.cc/gkK5W4Dd/splaygo.png",
   "https://i.postimg.cc/qM7cNLTY/ataraxia.png",
   "https://i.postimg.cc/2Sb4wSVf/Aputrak-Schedule-Activity-Manager-page-0001.jpg",
-  "https://i.postimg.cc/dVvy8VRD/eunoia.png",
   "https://i.postimg.cc/QdsTpdgs/serviserc.png",
   "https://i.postimg.cc/W4sYfZrN/image.png",
   "https://i.postimg.cc/QxtTSdVm/image.png",
