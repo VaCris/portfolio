@@ -2,7 +2,6 @@
 
 import { FadeIn } from "@/components/animations/FadeIn";
 import { Magnet } from "@/components/animations/Magnet";
-import Image from "next/image";
 import { profile, navLinks } from "@/data/portfolio";
 
 export function HeroSection() {
@@ -39,13 +38,12 @@ export function HeroSection() {
             <div className="absolute -inset-x-20 -top-20 h-40 bg-zinc-600/10 blur-[60px]" />
 
             {profile.image ? (
-              <Image
+              <img
                 src={profile.image}
                 alt={`Foto de perfil de ${profile.name}`}
-                fill
-                priority
-                sizes="(max-width: 640px) 240px, (max-width: 768px) 280px, (max-width: 1024px) 360px, 400px"
-                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
+                loading="eager"
+                decoding="async"
               />
             ) : (
               <div className="absolute inset-0 flex flex-col items-center justify-center p-8 text-center opacity-80">
