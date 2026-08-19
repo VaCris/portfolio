@@ -121,58 +121,6 @@ export const education = [
 
 export const projects = [
   {
-    name: "Docivo",
-    description:
-      "Herramientas de PDF rápidas, privadas y sin distracciones, enfocadas en simplicidad y rendimiento.",
-    stack: "Next.js 16, React 19, TypeScript, Tailwind CSS 4",
-    image: "https://i.ibb.co/B56zt7G7/Docivo.webp",
-    imageAlt: "Captura del proyecto Docivo",
-    liveUrl: "https://docivo.onrender.com/",
-    repositoryUrl: "https://github.com/VaCris/docivo",
-  },
-  {
-    name: "SPlay GO",
-    description:
-      "Plataforma web para explorar películas y series con catálogo, búsqueda, filtros y reproductor dinámico.",
-    stack: "React, Vite, Tailwind CSS, TMDB API",
-    image: "https://i.ibb.co/7t1j23KX/splaygo.webp",
-    imageAlt: "Captura del proyecto SPlay GO",
-    liveUrl: "https://splay.evaluate.codes",
-    repositoryUrl: "",
-  },
-  {
-    name: "Ataraxia Timer",
-    status: "testing",
-    description:
-      "Aplicación de productividad desarrollada desde cero. Temporizador Pomodoro, tareas y etiquetas. Parte del ecosistema Axia de Studios TKOH.",
-    stack: "React, APIs REST, Productividad",
-    image: "https://raw.githubusercontent.com/VaCris/VaCris/main/ATARAXIA.png",
-    imageAlt: "Captura del proyecto Ataraxia Timer",
-    liveUrl: "https://ataraxiatimer.app/",
-    repositoryUrl: "",
-  },
-  {
-    name: "Reservation API",
-    status: "in-progress",
-    description:
-      "API REST empresarial para gestión de reservas con autenticación JWT RS256, detección de conflictos vía Strategy Pattern, colas asíncronas con Messenger y notificaciones en tiempo real con Mercure.",
-    stack: "Symfony 7.3, PHP 8.2, MySQL (Doctrine), Mercure Hub, JWT",
-    image: "https://i.ibb.co/7xfy7PPq/reservation-api.webp",
-    imageAlt: "Vista conceptual del proyecto Reservation API",
-    liveUrl: "",
-    repositoryUrl: "https://github.com/VaCris/reservation-api",
-  },
-  {
-    name: "Aputrak",
-    status: "testing",
-    description: "Rediseño de interfaz e integración con API para aplicación de gestión de horarios y actividades. Componentes reutilizables y UX optimizada. Parte del ecosistema Axia de Studios TKOH.",
-    stack: "React, Tailwind CSS, Gestión de Horarios",
-    image: "https://i.ibb.co/GyWnnw7/Aputrak.webp",
-    imageAlt: "Captura del proyecto Aputrak Schedule Manager",
-    liveUrl: "https://aputrak.onrender.com/",
-    repositoryUrl: ""
-  },
-  {
     name: "Serviserc",
     status: "completed",
     description: "Sitio web corporativo migrado de HTML/CSS/JS a Next.js 16 para mejorar SEO, rendimiento y experiencia de desarrollo. Implementado con React 19, TypeScript y Tailwind CSS 4.",
@@ -201,6 +149,37 @@ export const projects = [
     repositoryUrl: "",
   },
   {
+    name: "SPlay GO",
+    description:
+      "Plataforma web para explorar películas y series con catálogo, búsqueda, filtros y reproductor dinámico.",
+    stack: "React, Vite, Tailwind CSS, TMDB API",
+    image: "https://i.ibb.co/7t1j23KX/splaygo.webp",
+    imageAlt: "Captura del proyecto SPlay GO",
+    liveUrl: "https://splay.evaluate.codes",
+    repositoryUrl: "",
+  },
+  {
+    name: "Docivo",
+    description:
+      "Herramientas de PDF rápidas, privadas y sin distracciones, enfocadas en simplicidad y rendimiento.",
+    stack: "Next.js 16, React 19, TypeScript, Tailwind CSS 4",
+    image: "https://i.ibb.co/B56zt7G7/Docivo.webp",
+    imageAlt: "Captura del proyecto Docivo",
+    liveUrl: "https://docivo.onrender.com/",
+    repositoryUrl: "https://github.com/VaCris/docivo",
+  },
+  {
+    name: "Ataraxia Timer",
+    status: "testing",
+    description:
+      "Aplicación de productividad desarrollada desde cero. Temporizador Pomodoro, tareas y etiquetas. Parte del ecosistema Axia de Studios TKOH.",
+    stack: "React, APIs REST, Productividad",
+    image: "https://i.ibb.co/r2Vr9Brz/Ataraxia-desktop.webp",
+    imageAlt: "Captura del proyecto Ataraxia Timer",
+    liveUrl: "https://ataraxiatimer.app/",
+    repositoryUrl: "",
+  },
+  {
     name: "Telegram Media Downloader",
     description: "Extensión de Chrome con Manifest V3 que restaura el acceso al botón de descarga nativo de Telegram Web en el visor multimedia y Stories. Implementación de Content Scripts, manipulación del DOM y Service Workers, manteniendo las descargas mediante el sistema nativo de Telegram y sin almacenar ni interceptar los archivos.",
     stack: "JavaScript, Chrome Extensions, Manifest V3, DOM API, Service Workers, HTML, CSS",
@@ -218,5 +197,26 @@ export const projects = [
     imageAlt: "Captura de la aplicación PrestaApp Mobile",
     liveUrl: "https://prestapp.studios-tkoh.online/",
     repositoryUrl: "",
+  },
+  {
+    name: "Reservation API",
+    status: "in-progress",
+    description:
+      "API REST empresarial para gestión de reservas con autenticación JWT RS256, detección de conflictos vía Strategy Pattern, colas asíncronas con Messenger y notificaciones en tiempo real con Mercure.",
+    stack: "Symfony 7.3, PHP 8.2, MySQL (Doctrine), Mercure Hub, JWT",
+    image: "https://i.ibb.co/7xfy7PPq/reservation-api.webp",
+    imageAlt: "Vista conceptual del proyecto Reservation API",
+    liveUrl: "",
+    repositoryUrl: "https://github.com/VaCris/reservation-api",
+  },
+  {
+    name: "Aputrak",
+    status: "testing",
+    description: "Rediseño de interfaz e integración con API para aplicación de gestión de horarios y actividades. Componentes reutilizables y UX optimizada. Parte del ecosistema Axia de Studios TKOH.",
+    stack: "React, Tailwind CSS, Gestión de Horarios",
+    image: "https://i.ibb.co/GyWnnw7/Aputrak.webp",
+    imageAlt: "Captura del proyecto Aputrak Schedule Manager",
+    liveUrl: "https://aputrak.onrender.com/",
+    repositoryUrl: ""
   },
 ];

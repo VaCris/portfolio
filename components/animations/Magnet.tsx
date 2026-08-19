@@ -42,9 +42,13 @@ export function Magnet({
 
     if (!insidePadding) return;
 
+    const maxMove = 80;
+    const clampedX = Math.max(-maxMove, Math.min(maxMove, distanceX / strength));
+    const clampedY = Math.max(-maxMove, Math.min(maxMove, distanceY / strength));
+
     setTransition(activeTransition);
     setTransform(
-      `translate3d(${distanceX / strength}px, ${distanceY / strength}px, 0)`,
+      `translate3d(${clampedX}px, ${clampedY}px, 0)`,
     );
   }
 
