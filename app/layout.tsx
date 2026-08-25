@@ -15,22 +15,23 @@ export const viewport: Viewport = {
 };
 
 export const metadata: Metadata = {
-  title: "Bryan Vidal | Desarrollador Web",
+  title: "Bryan Vidal | Frontend Developer · React · TypeScript · Next.js",
   description:
-    "Portfolio profesional de Bryan Alexander Vidal Crispín, desarrollador web y de software en Lima, Perú.",
+    "Portfolio de Bryan Vidal, desarrollador frontend especializado en React, TypeScript y Next.js. Proyectos web, aplicaciones y soluciones digitales.",
   keywords: [
     "Bryan Vidal",
-    "Desarrollador Web",
     "Desarrollador Frontend",
-    "Next.js",
+    "Frontend Developer",
     "React",
     "TypeScript",
+    "Next.js",
+    "Desarrollador Web",
     "Portfolio",
   ],
   authors: [{ name: "Bryan Alexander Vidal Crispín" }],
   creator: "Bryan Alexander Vidal Crispín",
   openGraph: {
-    title: "Bryan Vidal | Desarrollador Web",
+    title: "Bryan Vidal | Frontend Developer · React · TypeScript · Next.js",
     description:
       "Aplicaciones web modernas, interfaces responsivas e integración de APIs.",
     type: "website",
@@ -38,7 +39,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bryan Vidal | Desarrollador Web",
+    title: "Bryan Vidal | Frontend Developer · React · TypeScript · Next.js",
     description:
       "Aplicaciones web modernas, interfaces responsivas e integración de APIs.",
   },
@@ -52,11 +53,7 @@ export default function RootLayout({
   return (
     <html lang="es" className={kanit.variable}>
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link rel="preconnect" href="https://i.postimg.cc" />
         <link rel="preconnect" href="https://i.ibb.co" />
-        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
       </head>
       <body>{children}</body>
     </html>
