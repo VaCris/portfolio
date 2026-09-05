@@ -82,6 +82,20 @@ export const education = [
 
 export const projects = [
   {
+    name: "MotorDesk",
+    description: "Colaboré en MotorDesk, una aplicación de gestión de flotas y facturación electrónica. Trabajé sobre código existente en React, TypeScript, Redux Toolkit, Redux Saga y Dexie, aportando en mejoras de interfaz, gestión de estados y sincronización offline. Esta experiencia en un proyecto de mayor escala me permitió crecer leyendo código ajeno, resolviendo problemas concretos y aprendiendo a trabajar en equipo.",
+    stack: "React, TypeScript, Vite, Redux Toolkit, Redux Saga, Dexie, Tailwind CSS 4",
+    image: "https://i.ibb.co/5zMRkLb/Motordesk-Login.webp", imageAlt: "Captura del proyecto MotorDesk",
+    liveUrl: "", repositoryUrl: "",
+  },
+  {
+    name: "Docivo",
+    description: "Herramientas de PDF rápidas, privadas y sin distracciones, enfocadas en simplicidad y rendimiento.",
+    stack: "Next.js 16, React 19, TypeScript, Tailwind CSS 4",
+    image: "https://i.ibb.co/B56zt7G7/Docivo.webp", imageAlt: "Captura del proyecto Docivo",
+    liveUrl: "https://docivo.onrender.com/", repositoryUrl: "https://github.com/VaCris/docivo",
+  },
+  {
     name: "Serviserc", status: "completed",
     description: "Sitio web corporativo migrado de HTML/CSS/JS a Next.js 16 para mejorar SEO, rendimiento y experiencia de desarrollo. Implementado con React 19, TypeScript y Tailwind CSS 4.",
     stack: "Next.js 16, React 19, TypeScript, Tailwind CSS 4",
@@ -96,10 +110,10 @@ export const projects = [
     liveUrl: "https://studios-tkoh.online", repositoryUrl: "",
   },
   {
-    name: "MotorDesk",
-    description: "Colaboré en MotorDesk, una aplicación de gestión de flotas y facturación electrónica. Trabajé sobre código existente en React, TypeScript, Redux Toolkit, Redux Saga y Dexie, aportando en mejoras de interfaz, gestión de estados y sincronización offline. Esta experiencia en un proyecto de mayor escala me permitió crecer leyendo código ajeno, resolviendo problemas concretos y aprendiendo a trabajar en equipo.",
-    stack: "React, TypeScript, Vite, Redux Toolkit, Redux Saga, Dexie, Tailwind CSS 4",
-    image: "https://i.ibb.co/5zMRkLb/Motordesk-Login.webp", imageAlt: "Captura del proyecto MotorDesk",
+    name: "Plataforma DRM",
+    description: "Proyecto freelance para gestión de licencias y suscripciones digitales. Participé en el desarrollo backend con NestJS, APIs REST y WebSockets, trabajando en autenticación, validación de acceso e integración con servicios externos para aplicaciones web y móviles.",
+    stack: "NestJS, TypeScript, APIs REST, WebSockets",
+    image: "", imageAlt: "Proyecto backend Plataforma DRM",
     liveUrl: "", repositoryUrl: "",
   },
   {
@@ -108,13 +122,6 @@ export const projects = [
     stack: "React, Vite, Tailwind CSS, TMDB API",
     image: "https://i.ibb.co/7t1j23KX/splaygo.webp", imageAlt: "Captura del proyecto SPlay GO",
     liveUrl: "https://splay.evaluate.codes", repositoryUrl: "",
-  },
-  {
-    name: "Docivo",
-    description: "Herramientas de PDF rápidas, privadas y sin distracciones, enfocadas en simplicidad y rendimiento.",
-    stack: "Next.js 16, React 19, TypeScript, Tailwind CSS 4",
-    image: "https://i.ibb.co/B56zt7G7/Docivo.webp", imageAlt: "Captura del proyecto Docivo",
-    liveUrl: "https://docivo.onrender.com/", repositoryUrl: "https://github.com/VaCris/docivo",
   },
   {
     name: "Ataraxia Timer", status: "testing",
