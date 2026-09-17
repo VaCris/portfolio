@@ -9,7 +9,7 @@ export const navLinks = [
 export const profile = {
   name: "Bryan Alexander Vidal Crispin",
   shortName: "Bryan Vidal",
-  role: "Frontend / Web Developer",
+  role: "Full Stack Developer Jr.",
   location: "Lima, Perú",
   email: "bryan.vidal@studios-tkoh.online",
   github: "https://github.com/VaCris",
@@ -17,27 +17,34 @@ export const profile = {
   linkedin: "https://www.linkedin.com/in/bryan-alexander-vidal-crispin-110410301",
   formspreeEndpoint: process.env.NEXT_PUBLIC_FORMSPREE_ENDPOINT,
   intro:
-    "Desarrollo interfaces y aplicaciones web con React, TypeScript y Next.js, con foco en rendimiento, experiencia de usuario y mantenibilidad.",
+    "Desarrollo aplicaciones web con React, Next.js, TypeScript, Java y Spring Boot, integrando frontend, backend y APIs REST.",
   summary:
-    "Soy desarrollador de software enfocado en frontend y desarrollo web. Trabajo principalmente con React, TypeScript y Next.js, y también integro APIs y soluciones backend cuando el proyecto lo requiere. Me interesa construir productos claros, rápidos y mantenibles, además de resolver problemas técnicos sobre codebases existentes.",
+    "Soy desarrollador de software con experiencia en desarrollo web y aplicaciones full stack. Trabajo con React, Next.js y TypeScript en frontend, y con Java, Spring Boot, Spring WebFlux, Node.js y NestJS en backend. He participado en proyectos profesionales y freelance, desarrollando interfaces, servicios backend, integraciones con APIs y soluciones desplegadas en producción.",
 };
 
 export const highlights = [
   "Frontend con React, TypeScript y Next.js",
-  "Interfaces responsivas y UX",
-  "Integración de APIs REST",
-  "Optimización y mantenibilidad",
+  "Backend con Java, Spring Boot y Spring WebFlux",
+  "Node.js, NestJS y APIs REST",
+  "Interfaces responsivas y mantenibles",
   "Resolución de problemas técnicos",
 ];
 
 export const techGroups = [
-  { title: "Core", items: ["React", "TypeScript", "Next.js", "JavaScript (ES6+)", "Tailwind CSS"] },
-  { title: "Frontend", items: ["HTML5", "CSS3", "Vite", "Angular", "Redux Toolkit", "GSAP"] },
-  { title: "Backend", items: ["NestJS", "Symfony / PHP", "C#", "Java", "APIs REST"] },
-  { title: "Datos y herramientas", items: ["MySQL", "SQL Server", "SQL", "Git", "GitHub", "GitLab", "Postman"] },
+  { title: "Core", items: ["React", "TypeScript", "Next.js", "Java", "Spring Boot"] },
+  { title: "Frontend", items: ["JavaScript (ES6+)", "HTML5", "CSS3", "Tailwind CSS", "Vite", "Angular", "Redux Toolkit", "GSAP"] },
+  { title: "Backend", items: ["Java", "Spring Boot", "Spring WebFlux", "Node.js", "NestJS", "Symfony / PHP", "APIs REST", "WebSockets"] },
+  { title: "Datos y herramientas", items: ["MySQL", "SQL Server", "SQL", "Git", "GitHub", "GitLab", "Docker", "Postman"] },
 ];
 
 export const experiences = [
+  {
+    title: "Desarrollador Web Freelance",
+    company: "SERVISERC",
+    period: "Mayo 2026",
+    description:
+      "Migración de la landing page existente a un sitio web corporativo utilizando Next.js, React, TypeScript y Tailwind CSS. Reestructuración de la interfaz, navegación y componentes para ampliar el contenido y adaptarlo a las necesidades de la empresa.",
+  },
   {
     title: "Técnico de Transmisión de Datos (Soporte TI)",
     company: "ONPE",
@@ -46,32 +53,32 @@ export const experiences = [
       "Gestión y habilitación de infraestructura informática crítica. Ejecución de protocolos de seguridad para la transmisión de datos oficiales e implementación de la Solución Tecnológica de Apoyo al Escrutinio (STAE).",
   },
   {
-    title: "Desarrollador Front-end",
+    title: "Desarrollador Backend Freelance",
+    company: "Plataforma DRM - Cliente de España",
+    period: "Noviembre 2025 - Febrero 2026",
+    description:
+      "Desarrollo de funcionalidades backend para una plataforma de gestión de licencias y suscripciones utilizando NestJS, APIs REST y WebSockets. Integración de servicios externos, autenticación de usuarios y validación de acceso para aplicaciones web.",
+  },
+  {
+    title: "Desarrollador Full Stack Jr.",
     company: "Lubricantes Claudia",
     period: "Agosto 2025 - Diciembre 2025",
     description:
-      "Desarrollo de frontend con arquitectura modular y organización de componentes reutilizables. Refactorización continua para mejorar la mantenibilidad y el rendimiento, implementando interfaces alineadas a las reglas de negocio.",
+      "Desarrollo de interfaces web y componentes reutilizables, junto con servicios backend utilizando Java, Spring Boot y Spring WebFlux. Integración entre frontend y backend mediante APIs REST para la implementación de funcionalidades del sistema.",
   },
   {
-    title: "Proyecto Freelance - Plataforma DRM",
-    company: "Freelance",
-    period: "Octubre 2025",
-    description:
-      "Participación en el desarrollo de una plataforma DRM para gestión de licencias y suscripciones utilizando NestJS, APIs REST y WebSockets. Colaboración en la integración de servicios externos, autenticación de usuarios y validación de acceso para aplicaciones web y móviles, asegurando la protección de contenido digital y la experiencia del usuario.",
-  },
-  {
-    title: "Desarrollador Web",
+    title: "Desarrollador de Software Jr.",
     company: "JHARDSYSTEX",
-    period: "Feb 2025 - Jun 2025",
+    period: "Febrero 2025 - Junio 2025",
     description:
       "Desarrollo del frontend y diseño de la base de datos relacional para una aplicación web de gestión de tickets. Realización de pruebas funcionales para garantizar el correcto funcionamiento de los procesos clave del sistema.",
   },
   {
-    title: "Desarrollador Web",
+    title: "Desarrollador Web Jr.",
     company: "SERVISERC",
-    period: "Jul 2024 - Dic 2024",
+    period: "Julio 2024 - Diciembre 2024",
     description:
-      "Creación y mantenimiento de sitios web responsivos. Implementación de funcionalidades personalizadas según requerimientos del cliente, optimizando la experiencia de usuario (UX) y garantizando compatibilidad multiplataforma.",
+      "Desarrollo y mantenimiento de una landing page utilizando HTML, CSS, JavaScript y PHP. Implementación de mejoras y funcionalidades de acuerdo con las necesidades del negocio.",
   },
 ];
 
@@ -97,7 +104,7 @@ export const projects = [
   },
   {
     name: "Serviserc", status: "completed",
-    description: "Sitio web corporativo migrado de HTML/CSS/JS a Next.js 16 para mejorar SEO, rendimiento y experiencia de desarrollo. Implementado con React 19, TypeScript y Tailwind CSS 4.",
+    description: "Migración de una landing page existente a un sitio web corporativo con Next.js 16, React 19, TypeScript y Tailwind CSS 4, reestructurando la navegación, las páginas y los componentes del sitio.",
     stack: "Next.js 16, React 19, TypeScript, Tailwind CSS 4",
     image: "https://i.ibb.co/N67ZxdXK/serviserc.webp", imageAlt: "Captura del proyecto Serviserc",
     liveUrl: "https://vacris.github.io/landing-page-serviserc/", repositoryUrl: "",
@@ -111,7 +118,7 @@ export const projects = [
   },
   {
     name: "Plataforma DRM",
-    description: "Proyecto freelance para gestión de licencias y suscripciones digitales. Participé en el desarrollo backend con NestJS, APIs REST y WebSockets, trabajando en autenticación, validación de acceso e integración con servicios externos para aplicaciones web y móviles.",
+    description: "Proyecto freelance para un cliente de España orientado a la gestión de licencias y suscripciones digitales. Participé en el desarrollo backend con NestJS, APIs REST y WebSockets, trabajando en autenticación, validación de acceso e integración con servicios externos.",
     stack: "NestJS, TypeScript, APIs REST, WebSockets",
     image: "", imageAlt: "Proyecto backend Plataforma DRM",
     liveUrl: "", repositoryUrl: "",
