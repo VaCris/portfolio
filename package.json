@@ -15,21 +15,33 @@
   },
   "dependencies": {
     "framer-motion": "^12.0.0",
-    "next": "16.2.7",
+    "next": "16.4.3",
     "react": "19.2.4",
     "react-dom": "19.2.4"
   },
   "devDependencies": {
-    "@opennextjs/cloudflare": "^1.19.11",
-    "@tailwindcss/postcss": "^4",
+    "@opennextjs/cloudflare": "^1.20.13",
+    "@tailwindcss/postcss": "^4.3.3",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.7",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "16.4.3",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "wrangler": "^4.103.0"
+    "wrangler": "^4.152.0"
   },
-  "packageManager": "pnpm@10.0.0+sha512.b8fef5494bd3fe4cbd4edabd0745df2ee5be3e4b0b8b08fa643aa3e4c6702ccc0f00d68fa8a8c9858a735a0032485a44990ed2810526c875e416f001b17df12b"
+  "packageManager": "pnpm@10.0.0+sha512.b8fef5494bd3fe4cbd4edabd0745df2ee5be3e4b0b8b08fa643aa3e4c6702ccc0f00d68fa8a8c9858a735a0032485a44990ed2810526c875e416f001b17df12b",
+  "pnpm": {
+    "overrides": {
+      "glob@10": "10.5.0",
+      "brace-expansion@1": "1.1.21",
+      "brace-expansion@5": "5.0.12",
+      "browserslist": "4.28.7",
+      "baseline-browser-mapping": "2.11.0",
+      "source-map-js": "1.2.2",
+      "zod@4": "4.6.6",
+      "undici@7": "7.30.1"
+    }
+  }
 }
