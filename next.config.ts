@@ -2,6 +2,9 @@ import type { NextConfig } from "next";
 import path from "path";
 
 const nextConfig: NextConfig = {
+  experimental: {
+    agentUpgrade: "security",
+  },
   turbopack: {
     root: path.resolve(__dirname),
   },
@@ -12,6 +15,7 @@ const nextConfig: NextConfig = {
   },
   allowedDevOrigins: ["192.168.1.7"],
   images: {
+    unoptimized: true,
     remotePatterns: [
       {
         protocol: "https",

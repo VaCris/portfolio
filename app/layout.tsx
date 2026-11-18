@@ -52,9 +52,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" className={kanit.variable}>
-      <head>
-        <link rel="preconnect" href="https://i.ibb.co" />
-      </head>
       <body>{children}</body>
     </html>
   );
