@@ -107,7 +107,7 @@ export const projects = [
     description: "Migración de una landing page existente a un sitio web corporativo con Next.js 16, React 19, TypeScript y Tailwind CSS 4, reestructurando la navegación, las páginas y los componentes del sitio.",
     stack: "Next.js 16, React 19, TypeScript, Tailwind CSS 4",
     image: "https://i.ibb.co/N67ZxdXK/serviserc.webp", imageAlt: "Captura del proyecto Serviserc",
-    liveUrl: "https://vacris.github.io/landing-page-serviserc/", repositoryUrl: "",
+    liveUrl: "https://serviserc.pages.dev/", repositoryUrl: "",
   },
   {
     name: "Studios TKOH! Web",
